@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: cmti
+# name: cmti
+# contributor: David Johnson
+# --
+import Control.Monad.Trans.Identity

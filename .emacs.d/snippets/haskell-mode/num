@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: num
+# key: num
+# author: dmj
+# --
+import Numeric

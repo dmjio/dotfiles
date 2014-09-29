@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: appmaybe
+# name: appmaybe
+# contributor: David Johnson
+# --
+instance Applicative Maybe where
+    pure = return
+    (<*>) = ap

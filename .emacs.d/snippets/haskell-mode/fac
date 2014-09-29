@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: fac
+# name: fac
+# contributor: David Johnson
+# --
+fac :: Integer -> Integer
+fac 0 = 1
+fac n = n * fac (n - 1)

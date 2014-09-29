@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: srm
+# key: srm
+# author: dmjio
+# --
+import System.Remote.Monitoring

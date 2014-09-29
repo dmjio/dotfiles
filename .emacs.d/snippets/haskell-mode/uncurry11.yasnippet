@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: uncurry11
+# key: uncurry11
+# --
+uncurry11 :: (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l) ->
+           (a,b,c,d,e,f,g,h,i,j,k) -> l
+uncurry11 z (a,b,c,d,e,f,g,h,i,j,k) = z a b c d e f g h i j k

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dtio
+# key: dtio
+# author: dmj
+# --
+import qualified Data.Text.IO as T

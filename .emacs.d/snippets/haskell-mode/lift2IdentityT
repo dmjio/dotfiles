@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: lift2IdentityT
+# name: lift2IdentityT
+# contributor: David Johnson
+# --
+-- | Lift a binary operation to the new monad.
+lift2IdentityT :: (m a -> n b -> p c) -> IdentityT m a -> IdentityT n b -> IdentityT p c
+lift2IdentityT f a b = IdentityT (f (runIdentityT a) (runIdentityT b))

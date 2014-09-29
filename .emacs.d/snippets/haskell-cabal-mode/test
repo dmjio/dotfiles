@@ -1,0 +1,13 @@
+# key: test
+# name: test
+# --
+Test-Suite ${1:TestName}
+    type:       exitcode-stdio-1.0
+    main-is:    ${2:FileName}.hs
+    build-depends: base
+                 , QuickCheck
+                 , tasty
+                 , tasty-hunit
+                 , tasty-quickcheck
+    default-language:    Haskell2010
+    ghc-options:  -Wall

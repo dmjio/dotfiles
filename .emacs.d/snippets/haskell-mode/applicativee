@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: appe
+# name: appe
+# contributor: David Johnson
+# --
+instance Applicative ((->) e) where
+    pure y = \x -> y
+    f <*> g = \x -> f x (g x)

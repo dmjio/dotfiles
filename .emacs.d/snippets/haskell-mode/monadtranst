@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: monadtranst
+# name: monadtranst
+# contributor: David Johnson
+# --
+instance MonadTrans ${1:Type}T where
+    lift = $1T
+    

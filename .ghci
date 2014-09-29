@@ -1,0 +1,10 @@
+:set prompt "λ: "
+:set -XScopedTypeVariables
+:set -XOverloadedStrings
+:set -fno-warn-unused-imports
+:def hlint const . return $ ":! hlint \"src\""
+:def hoogle \s -> return $ ":! hoogle --count=15 \"" ++ s ++ "\""
+:def pl \s -> return $ ":! pointfree \"" ++ s ++ "\""
+:set -isrc
+:set -itests
+:set -ibenchmarks

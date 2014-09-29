@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: ih
+# name: ih
+# contributor: David Johnson
+# --
+instance HasHeist ${1:App} where
+	heistLens = subSnaplet heist

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dmap
+# name: dmap
+# contributor: David Johnson
+# --
+import qualified Data.Map as M

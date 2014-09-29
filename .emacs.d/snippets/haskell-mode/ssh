@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ssh
+# key: ssh
+# author: dmj
+# --
+import Snap.Snaplet.Heist

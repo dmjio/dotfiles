@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: $
+# name: $
+# contributor: David Johnson
+# --
+($) :: (a -> b) -> a -> b
+f $ x = f x

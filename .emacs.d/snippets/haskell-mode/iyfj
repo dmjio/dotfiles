@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: iyfj
+# key: iyfj
+# author: dmj
+# --
+import Yesod.Form.Jquery

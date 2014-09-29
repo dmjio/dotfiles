@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: hnf
+# key: hnf
+# author: dmjio
+# --
+<dolio> \x -> (\y -> (y,x)) 3
+<dolio> Is in weak head normal form, but not head normal form.

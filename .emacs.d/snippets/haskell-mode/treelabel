@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: treelabel
+# name: treelabel
+# contributor: David Johnson
+# --
+data LabTree l a = Tip a | LFork l (LabTree l a) (LabTree l a)

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dat
+# key: dat
+# author: dmjio
+# --
+import Data.Aeson.Types

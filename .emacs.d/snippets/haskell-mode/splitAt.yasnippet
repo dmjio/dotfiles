@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: splitAt
+# key: splitAt
+# --
+splitAt :: Eq a => Int -> [a] -> ([a],[a])
+splitAt num xs = (take num xs, drop num xs)

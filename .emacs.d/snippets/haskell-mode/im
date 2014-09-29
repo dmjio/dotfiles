@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: im
+# key: im
+# author: dmjio
+# --
+import qualified Data.IntMap.Strict as I

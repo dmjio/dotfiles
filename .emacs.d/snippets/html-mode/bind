@@ -1,0 +1,5 @@
+# key: bind
+# name: bind
+# author: dmj
+# --
+<bind tag="$1">$2</bind>

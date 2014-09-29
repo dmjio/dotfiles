@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# key: filterM
+# name: filterM
+# contributor: David Johnson
+# --
+filterM :: Monad m => (a -> m Bool) -> [a] -> m [a]
+filterM _ [] = return []
+filterM f (x:xs) = do
+  flag <- f x
+  ys <- filterM f xs
+  return (if flag then x:ys else ys)

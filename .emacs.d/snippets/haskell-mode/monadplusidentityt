@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: monadplusidentityt
+# name: monadplusidentityt
+# contributor: David Johnson
+# --
+instance (MonadPlus m) => MonadPlus (IdentityT m) where
+    mzero = IdentityT mzero
+    mplus = lift2IdentityT mplus
+    

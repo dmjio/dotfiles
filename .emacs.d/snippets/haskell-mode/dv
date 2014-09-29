@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dv
+# name: dv
+# contributor: David Johnson
+# --
+import Data.Vector

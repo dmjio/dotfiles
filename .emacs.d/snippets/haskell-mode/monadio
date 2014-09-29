@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: monadio
+# name: monadio
+# contributor: David Johnson
+# --
+class (Monad m) => MonadIO m where
+   liftIO :: IO a -> m a

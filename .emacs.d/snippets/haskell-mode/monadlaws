@@ -1,0 +1,18 @@
+	# -*- mode: snippet -*-
+	# key: monadlaws
+	# name: monadlaws
+	# contributor: David Johnson
+	# --
+--Left Identity: return a >>= f == f a	
+--Right Identity: m >>= return == m
+--Associativity: (m >>= f) >>= g == m >>= (\x -> f x >>= g)
+--or
+--Associativity: (m >=> f) >=> g == m >=> (f >=> g)
+
+-- In Kleisli terms
+--return >=> g  =  g
+--g >=> return  =  g
+--(g >=> h) >=> k  =  g >=> (h >=> k)
+--As fans of category theory will note, these laws say precisely that functions of type 
+--a -> m b are the arrows of a category with (>=>) as composition! Indeed, this is known as
+--the Kleisli category of the monad m.

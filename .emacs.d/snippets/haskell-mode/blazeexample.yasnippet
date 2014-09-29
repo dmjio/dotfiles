@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: blazeexample
+# key: blazeexample
+# author: dmj
+# --
+{-# LANGUAGE OverloadedStrings #-}
+
+module Main where
+
+import           Control.Monad                   (forM_)
+
+import           Text.Blaze.Html.Renderer.Pretty
+import           Text.Blaze.Html5                as H
+
+main :: IO ()
+main = writeFile "index.html" writer
+
+writer :: String
+writer = renderHtml $ numbers 3
+
+numbers :: Int -> Html
+numbers n = docTypeHtml $ do
+              H.head $ H.title "Natural Numbers"
+              body $ do
+                p "A list of natural numbers"
+                ul $ forM_ [1 .. n] (li . toHtml)

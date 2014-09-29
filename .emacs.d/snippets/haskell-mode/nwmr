@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nwmr
+# key: nwmr
+# author: dmj
+# --
+import Network.Wai.Middleware.RequestLogger

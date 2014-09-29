@@ -1,0 +1,4 @@
+# key: ps
+# name: ps
+# --
+putStrLn "$1"

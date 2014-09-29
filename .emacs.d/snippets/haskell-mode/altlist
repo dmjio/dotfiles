@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: altlist
+# name: altlist
+# contributor: David Johnson
+# --
+instance Alternative [] where
+    empty = []
+    (<|>) = concat

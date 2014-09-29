@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: findUniq
+# key: findUniq
+# author: dmj
+# --
+findUniq :: Ord a => [a] -> [a]
+findUniq xs = map fst $ toList $ go xs empty
+  where go [] m     = m
+        go (x:xs) m = go xs (insert x True m)

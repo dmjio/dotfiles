@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fct
+# key: fct
+# author: dmj
+# --
+import Foreign.C.Types

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: lmap
+# name: lmap
+# contributor: David Johnson
+# --
+(<$) :: Functor f => a -> f b -> f a
+(<$) = fmap . const

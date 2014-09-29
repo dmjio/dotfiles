@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: idempotency
+# key: idempotency
+# author: dmj
+# --
+Applying a function once has the same effect as applying it twice

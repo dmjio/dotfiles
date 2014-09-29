@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: bs
+# name: bs
+# contributor: David Johnson
+# --
+import qualified Data.ByteString as B

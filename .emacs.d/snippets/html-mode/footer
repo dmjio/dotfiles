@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: footer
+# key: footer
+# author: dmjio
+# --
+<footer>$1</footer>

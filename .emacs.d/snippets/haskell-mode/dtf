@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dtf
+# key: dtf
+# author: dmj
+# --
+import           Data.Time.Format

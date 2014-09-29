@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: idxs
+# key: idxs
+# author: dmj
+# --
+idxs :: (Eq a, Num b, Enum b) => [a] -> a -> [b]
+idxs word br = [i | (i, c) <- zip [0..] word,  c == br]

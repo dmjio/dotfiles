@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: functor
+# name: functor
+# contributor: David Johnson
+# --
+class Functor f where
+	fmap :: (a -> b) -> f a -> f b
+	(<$) :: a -> f b -> f a
+	(<$) = fmap . const

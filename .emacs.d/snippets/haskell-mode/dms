@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dms
+# key: dms
+# author: dmjio
+# --
+import qualified Data.Map.Strict as M

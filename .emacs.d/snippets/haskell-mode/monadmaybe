@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: monadmaybe
+# name: monadmaybe
+# contributor: David Johnson
+# --
+instance Monad Maybe where
+    return = Just
+    Nothing >>= _ = Nothing
+    Just x >>= f = f x

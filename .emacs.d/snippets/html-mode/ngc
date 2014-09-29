@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ngc
+# key: ngc
+# author: dmjio
+# --
+ng-controll="$1"  

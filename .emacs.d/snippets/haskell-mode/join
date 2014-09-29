@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: join
+# name: join
+# contributor: David Johnson
+# --
+join :: Monad m => m (m a) -> m a
+join ma = ma >>= id

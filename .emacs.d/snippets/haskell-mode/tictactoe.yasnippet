@@ -1,0 +1,44 @@
+# -*- mode: snippet -*-
+# name: tictactoe
+# key: tictactoe
+# author: dmj
+# --
+module TicTacToe where
+
+import           Control.Monad.State
+import           Data.Array
+import           Data.List           (transpose)
+type Board = [String]
+
+
+board :: Board
+board = [ "  o"
+        , " x "
+        , "o  " ]
+
+winDiag :: Char -> Board -> Bool
+winDiag k [(a:b:c:_),(h:i:j:_),(x:y:z:_)]
+    | all (==k) [a,i,z] = True
+    | all (==k) [c,i,x] = True
+    | otherwise   = False
+
+winVert :: Char -> Board -> Bool
+winVert x = all . all $ (==x)
+
+winHorz :: Char -> Board -> Bool
+winHorz x = winVert x  . transpose
+
+win :: Char -> Board -> Bool
+win x xs = or [winVert x xs, winHorz x xs, winDiag x xs]
+
+winx, wino :: Board -> Bool
+winx = win 'x'
+wino = win 'o'
+
+winner :: Board -> IO ()
+winner b | winx b    = print "X wins"
+         | wino b    = print "O wins"
+         | otherwise = print "No one wins"
+
+main :: IO ()
+main = winner board

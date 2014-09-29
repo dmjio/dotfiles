@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mapM_ 
+# key: mapM_ 
+# author: dmj
+# --
+mapM_           :: Monad m => (a -> m b) -> [a] -> m ()
+mapM_ f as      =  sequence_ (map f as)

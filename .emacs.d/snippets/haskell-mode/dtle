@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dtle
+# key: dtle
+# author: dmj
+# --
+import qualified Data.Text.Lazy.Encoding as T

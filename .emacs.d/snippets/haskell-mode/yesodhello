@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# key: yesodhello
+# name: yesodhello
+# contributor: David Johnson
+# --
+{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE OverloadedStrings     #-}
+{-# LANGUAGE QuasiQuotes           #-}
+{-# LANGUAGE TemplateHaskell       #-}
+{-# LANGUAGE TypeFamilies          #-}
+
+import           Yesod
+
+data HelloWorld = HelloWorld
+
+mkYesod "HelloWorld" [parseRoutes|
+/ HomeR GET
+|]
+
+instance Yesod HelloWorld
+
+getHomeR :: Handler RepHtml
+getHomeR = defaultLayout [whamlet|Hello World!|]
+
+main :: IO ()
+main = warp 3000 HelloWorld

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: put
+# key: put
+# author: dmj
+# --
+put :: s -> State s ()
+put x = State $ \s -> ((),x)

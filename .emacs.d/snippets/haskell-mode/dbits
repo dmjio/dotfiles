@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dbits
+# name: dbits
+# contributor: David Johnson
+# --
+import Data.Bits

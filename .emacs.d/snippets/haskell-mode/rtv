@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: rtv
+# key: rtv
+# author: dmjio
+# --
+readTVar

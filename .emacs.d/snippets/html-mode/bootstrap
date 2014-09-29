@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bootstrap
+# key: bootstrapc
+# author: dmj
+# --
+<link rel="stylesheet" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" />
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>

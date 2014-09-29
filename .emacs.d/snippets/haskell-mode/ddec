@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ddec
+# key: ddec
+# author: dmjio
+# --
+import Data.Decimal

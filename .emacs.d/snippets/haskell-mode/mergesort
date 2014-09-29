@@ -1,0 +1,15 @@
+# key: mergesort
+# name: mergesort
+# --
+mergeSort :: Ord a => [a] -> [a]
+mergeSort []    = []
+mergeSort [x]   = [x]
+mergeSort xs    = merge (mergeSort x1) (mergeSort x2)
+  where (x1,x2) = splitAt (div (length xs) 2) xs
+
+merge :: Ord a => [a] -> [a] -> [a]
+merge [] x = x
+merge x [] = x
+merge (x:xs) (y:ys) 
+    | x < y     = x : merge xs (y:ys)
+    | otherwise = y : merge (x:xs) ys

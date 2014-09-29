@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: fib
+# name: fib
+# contributor: David Johnson
+# --
+fib@(1:tfib) = 1 : 1 : [ a+b | (a,b) <- zip fib tfib ]

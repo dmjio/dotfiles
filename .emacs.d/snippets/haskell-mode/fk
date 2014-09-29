@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fk
+# key: fk
+# author: dmj
+# --
+forkIO

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dstr
+# key: dstr
+# author: dmj
+# --
+import Data.String

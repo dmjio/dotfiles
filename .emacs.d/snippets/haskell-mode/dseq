@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dseq
+# name: dseq
+# contributor: David Johnson
+# --
+import Data.Sequence

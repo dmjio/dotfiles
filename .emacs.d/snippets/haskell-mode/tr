@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tr
+# key: tr
+# author: dmjio
+# --
+import Text.Read 

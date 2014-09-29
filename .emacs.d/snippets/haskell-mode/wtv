@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wtv
+# key: wtv
+# author: dmjio
+# --
+writeTVar

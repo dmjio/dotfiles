@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: df
+# name: df
+# contributor: David Johnson
+# --
+import Data.Foldable ${1:(Foldable(foldMap))}

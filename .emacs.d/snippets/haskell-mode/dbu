@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dbu
+# key: dbu
+# author: dmj
+# --
+import qualified Data.ByteString.Unsafe              as S

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sco
+# key: sco
+# author: dmj
+# --
+{-# SCC "$1" #-}$2

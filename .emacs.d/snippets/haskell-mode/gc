@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gc
+# key: gc
+# author: dmj
+# --
+import GHC.Conc

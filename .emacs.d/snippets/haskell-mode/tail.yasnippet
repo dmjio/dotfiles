@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: tail
+# key: tail
+# --
+tail :: [a] -> [a]
+tail [] = error "empty list"
+tail (_:xs) = xs

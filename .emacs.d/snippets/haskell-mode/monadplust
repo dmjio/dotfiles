@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: monadplust
+# name: monadplust
+# contributor: David Johnson
+# --
+instance (MonadPlus m) => MonadPlus (${1:Class}T m) where
+    mzero = $1T mzero
+    mplus = $2
+    

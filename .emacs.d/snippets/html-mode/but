@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: but
+# key: but
+# author: dmj
+# --
+<button id="$1"></button>

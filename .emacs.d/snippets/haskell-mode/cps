@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cps
+# key: cps
+# author: dmjio
+# --
+import Control.Parallel.Strategies

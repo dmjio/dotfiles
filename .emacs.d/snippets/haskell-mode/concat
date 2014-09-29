@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: concat
+# name: concat
+# contributor: David Johnson
+# --
+concat :: [[a]] -> [a]
+concat = foldr (++) []

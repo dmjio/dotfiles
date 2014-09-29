@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: monad
+# name: monad
+# contributor: David Johnson
+# --
+class Monad m where
+	return :: a -> m a
+	(>>=)  :: m a -> (a -> m b) -> m b
+	(>>)   :: m a -> m b -> m b
+	m >> n = m >>= \_ -> n

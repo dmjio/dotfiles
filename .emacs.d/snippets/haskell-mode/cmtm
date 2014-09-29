@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cmtm
+# key: cmtm
+# author: dmj
+# --
+import Control.Monad.Trans.Maybe

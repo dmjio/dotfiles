@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ddef
+# key: ddef
+# author: dmj
+# --
+import Data.Default

@@ -1,0 +1,57 @@
+# -*- mode: snippet -*-
+# name: enumerator
+# key: enumerator
+# author: dmj
+# --
+{-# LANGUAGE OverloadedStrings #-}
+
+module Main where
+
+import           Control.Concurrent     (threadDelay)
+import           Control.Monad.IO.Class (MonadIO (liftIO))
+import qualified Data.ByteString        as BS
+import qualified Data.ByteString.Char8  as BS8
+import           Data.Enumerator
+import           Data.Enumerator.Binary as EB
+import           Data.Enumerator.List   as EL
+import           Data.Maybe
+import           Data.Word8
+import           System.IO
+
+-- ByteString -> Maybe (IO Word8)
+consumer :: Iteratee BS.ByteString IO ()
+consumer = do
+  mw <- EB.head
+  case mw of
+    Nothing -> return ()
+    Just w  -> do
+             liftIO . putStr $ "XXX "
+             liftIO . BS8.putStrLn . BS.singleton $ w
+             liftIO $ threadDelay $ 1000000 `div` 2
+             consumer
+
+listFeeder :: Enumerator BS.ByteString IO a
+listFeeder = enumList 1 ["12", "34"]
+
+fileFeeder :: Enumerator BS.ByteString IO a
+fileFeeder = EB.enumFile "filef"
+
+consumer2 :: Iteratee BS.ByteString IO ()
+consumer2 = do
+  mw <- EB.head
+  case mw of
+    Nothing -> return ()
+    Just x -> do
+              liftIO . putStr $ "YYY "
+              liftIO . BS8.putStrLn . BS.singleton $ x
+              consumer2
+
+-- run_ $ (fileFeeder <==< listFeeder) $$ consumer
+
+enumHandleLines :: MonadIO m => Integer -> Handle ->
+                   Enumerator BS.ByteString m BS.ByteString
+enumHandleLines n hdl = EB.enumHandle n hdl $= byteLines
+
+byteLines :: Monad m =>
+             Enumeratee BS.ByteString BS.ByteString m b
+byteLines = EB.splitWhen (== 10) -- 10 is LF

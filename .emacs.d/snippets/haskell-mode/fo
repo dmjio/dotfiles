@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fo
+# key: fo
+# author: dmj
+# --
+import Foreign

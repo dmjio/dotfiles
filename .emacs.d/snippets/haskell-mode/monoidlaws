@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: monoidlaws
+# name: monoidlaws
+# contributor: David Johnson
+# --
+--a <> (b <> c) = (a <> b) <> c
+--mempty <> a = a
+--a <> mempty = a

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: >=>
+# name: >=>
+# contributor: David Johnson
+# --
+(>=>) :: Monad m => (a -> m b) -> (b -> m c) -> a -> m c
+f >=> g = \x -> f x >>= g

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: forM
+# name: forM
+# contributor: David Johnson
+# --
+forM :: Monad m => [a] -> (a -> m b) -> m [b]
+forM = flip mapM

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: maybeToList
+# key: maybeToList
+# --
+maybeToList :: Maybe a -> [a]
+maybeToList Nothing = []
+maybeToList (Just x) = [x]

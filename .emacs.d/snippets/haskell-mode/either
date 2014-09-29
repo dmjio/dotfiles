@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: either
+# name: either
+# contributor: David Johnson
+# --
+data Either a b = Left a | Right b 

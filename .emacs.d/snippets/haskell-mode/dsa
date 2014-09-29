@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dsa
+# key: dsa
+# author: dmj
+# --
+import Data.SafeCopy

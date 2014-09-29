@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: reader
+# name: reader
+# contributor: David Johnson
+# --
+newtype Reader r a = Reader { runReader :: r -> a }

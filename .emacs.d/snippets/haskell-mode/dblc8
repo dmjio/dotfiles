@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dblc8
+# key: dblc8
+# author: dmj
+# --
+import qualified Data.ByteString.Lazy.Char8      as L

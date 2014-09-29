@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: foldl
+# key: foldl
+# contributor: David Johnson
+# --
+foldl :: (a -> b -> a) -> a -> [b] -> a
+foldl f x xs = go x xs 
+      where
+         go z [] = z
+         go z (y:ys) = go (f z y) ys
+

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dls
+# key: dls
+# author: dmj
+# --
+import Data.List.Split

@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# key: alternative
+# name: alternative
+# contributor: David Johnson
+# --
+class Applicative f => Alternative f where
+    empty :: f a
+    (<|>) :: f a -> f a -> f a
+
+    -- | One or more
+    some :: f a -> f [a]
+    some v = some_v where
+        many_v = some_v <|> pure []
+        some_v = (:) <$ > v <*> many_v
+
+    -- | Zero or more
+    many :: f a -> f [a]
+    many v = many_v where
+        many_v = some_v <|> pure []
+        some_v = (:) <$ > v <*> many_v

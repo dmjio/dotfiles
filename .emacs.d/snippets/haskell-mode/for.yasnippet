@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: for
+# key: for
+# --
+for :: (Monad m) => m a -> m Bool -> m b -> m c -> m ()
+for init cond post action = do
+  init
+  while cond $ do
+    action
+    post

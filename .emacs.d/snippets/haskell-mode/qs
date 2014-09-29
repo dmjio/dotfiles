@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# key: qs
+# name: qs
+# contributor: David Johnson
+# --
+qs :: Ord a => [a] -> [a]
+qs [] = []
+qs (x:xs) = qs left ++ [x] ++ qs right where
+    left  = filter (<x) xs
+    right = filter (>=x) xs
+    

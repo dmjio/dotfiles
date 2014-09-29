@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: rot13
+# key: rot13
+# author: dmj
+# --
+rot13 :: String -> String
+rot13 = iterate rotate >>> (!!13)
+    where rotate = map rot
+          rot c | c == 'z' = 'a'
+                | otherwise = succ c
+

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tbhrt
+# key: tbhrt
+# author: dmj
+# --
+import Text.Blaze.Html.Renderer.Text

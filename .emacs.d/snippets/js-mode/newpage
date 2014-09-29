@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: newpage
+# key: newpage
+# author: dmjio
+# --
+(function($) {
+
+    $.st.pages.$1 = function () {
+        $2
+    };
+
+
+})(jQuery);

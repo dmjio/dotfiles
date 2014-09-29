@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cd
+# key: cd
+# author: dmj
+# --
+import Control.DeepSeq

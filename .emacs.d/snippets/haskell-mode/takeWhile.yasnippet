@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: takeWhile
+# key: takeWhile
+# --
+takeWhile :: (a -> Bool) -> [a] -> [a]
+takeWhile p xs = [ z | z <- xs, p z]

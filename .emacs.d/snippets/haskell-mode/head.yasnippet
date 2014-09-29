@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: head
+# key: head
+# --
+head :: [a] -> a
+head (x:_) = x
+head [] = error "Prelude.empty head"

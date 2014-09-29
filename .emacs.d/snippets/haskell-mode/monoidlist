@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: monoidlist
+# name: monoidlist
+# contributor: David Johnson
+# --
+instance Monoid [a] where
+	mempty = []
+	mappend = (++)

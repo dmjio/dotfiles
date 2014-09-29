@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ssc
+# key: ssc
+# author: dmjio
+# --
+import                Snap.Snaplet.Config

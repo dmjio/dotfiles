@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: qq
+# key: qq
+# author: dmj
+# --
+{-# LANGUAGE QuasiQuotes #-}

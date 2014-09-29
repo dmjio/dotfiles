@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# key: arrowplus
+# name: arrowplus
+# contributor: David Johnson
+# --
+class Arrow a => ArrowZero a where
+    zeroArrow :: a b c
+
+class ArrowZero a => ArrowPlus a where
+    (<+>) :: a b c -> a b c -> a b c
+            

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: guard
+# name: guard
+# contributor: David Johnson
+# --
+guard :: MonadPlus m => Bool -> m ()
+guard True = return ()
+guard False = mzero

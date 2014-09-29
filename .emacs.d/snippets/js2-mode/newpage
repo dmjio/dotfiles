@@ -1,0 +1,16 @@
+# key: newpage
+# name: newpage
+# --
+(function($) {
+
+    $.st.pages.$1 = {
+      ready : function() {
+        $2
+      }
+    };
+
+    /* re-export */
+    $.extend($.st.pages, { $1 : $.st.pages.$1 });
+
+
+})(jQuery);

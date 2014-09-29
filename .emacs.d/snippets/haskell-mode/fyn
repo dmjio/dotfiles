@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: yfn
+# key: yfn
+# author: dmj
+# --
+import Yesod.Form.Nic (YesodNic, nicHtmlField)

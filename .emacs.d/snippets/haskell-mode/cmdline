@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cmdline
+# key: cmdline
+# author: dmjio
+# --
+sample :: IO ()
+sample = F.mapM_ print =<< getDoubles
+  where getDoubles = catMaybes . map readMaybe <$> getArgs :: IO [Double]

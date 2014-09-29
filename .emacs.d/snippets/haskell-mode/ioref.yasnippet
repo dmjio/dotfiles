@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: ioref
+# key: ioref
+# --
+main = do varA <- newIORef 0  -- Create and initialize a new variable
+          a0 <- readIORef varA
+          writeIORef varA 1
+          a1 <- readIORef varA
+          print (a0, a1)

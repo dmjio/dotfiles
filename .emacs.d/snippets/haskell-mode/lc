@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: lc
+# key: lc
+# author: dmj
+# --
+{-# LANGUAGE LambdaCase #-}

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: unicode
+# key: unicode
+# --
+{-# LANGUAGE UnicodeSyntax #-}
+
+spherical (x, y, z) = (r, θ, φ)
+    where r = sqrt $ x^2 + y^2
+          θ = acos $ z / r
+          φ = atan2 y x
+
+π = pi
+
+-- α = δω / δt

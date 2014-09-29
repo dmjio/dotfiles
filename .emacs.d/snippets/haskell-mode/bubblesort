@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: bubblesort
+# key: bubblesort
+# author: dmjio
+# --
+import           Data.List       (sort)
+import           Test.QuickCheck
+
+main :: IO ()
+main = do verboseCheck isValidSort >> verboseCheck idempotent
+
+isValidSort, idempotent :: [Integer] -> Bool
+isValidSort xs = sort xs == bubbleSort xs
+idempotent  xs = bubbleSort (bubbleSort xs) == bubbleSort xs
+
+bubbleSort :: [Integer] -> [Integer]
+bubbleSort xs = let (state, bubbled) = bubble True xs
+                in if not state
+                   then bubbleSort bubbled
+                   else bubbled
+  where
+    bubble :: Bool -> [Integer] -> (Bool, [Integer])
+    bubble changed []  = (,) changed []
+    bubble changed [x] = (,) changed [x]
+    bubble changed (a:b:as) | compare a b == GT = (fst $ bubble False (a:as), b:(snd $ bubble False (a:as)))
+                            | otherwise = (fst $ bubble (changed && True) (b:as), a:(snd $ bubble (changed && True) (b:as)))

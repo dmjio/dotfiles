@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: derg
+# key: derg
+# author: dmj
+# --
+{-# LANGUAGE DeriveGeneric  #-}

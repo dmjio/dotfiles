@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: monadidentityt
+# name: monadidentityt
+# contributor: David Johnson
+# --
+instance (Monad m) => Monad (IdentityT m) where
+    return = IdentityT . return
+    m >>= k = IdentityT $ runIdentityT . k =<< runIdentityT m
+    fail msg = IdentityT $ fail msg
+    

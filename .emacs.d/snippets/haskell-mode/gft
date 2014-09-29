@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gft
+# key: gft
+# author: dmjio
+# --
+import GHC.Fingerprint.Type

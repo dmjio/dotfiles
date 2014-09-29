@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: neth
+# key: neth
+# author: dmj
+# --
+import           Network.HTTP

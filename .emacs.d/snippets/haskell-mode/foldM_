@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: foldM_
+# name: foldM_
+# contributor: David Johnson
+# --
+foldM_ :: Monad m => (a -> b -> m a) -> a -> [b] -> m ()
+foldM_ f a (xs) = foldM f a xs >> return ()

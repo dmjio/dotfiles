@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ls
+# key: ls
+# author: dmj
+# --
+letter-spacing : $1px;

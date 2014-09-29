@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: unzip
+# name: unzip
+# contributor: David Johnson
+# --
+unzip :: [(a,b)] -> ([a],[b])
+unzip = foldr (\(a,b) ~(as,bs) -> (a:as,b:bs)) ([],[])
+  

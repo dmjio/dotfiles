@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sls
+# key: sls
+# author: dmjio
+# --
+import Snap.Loader.Static

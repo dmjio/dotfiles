@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: yi
+# key: yi
+# author: dmj
+# --
+{-# LANGUAGE QuasiQuotes       #-}
+{-# LANGUAGE TemplateHaskell   #-}
+
+import Yesod
+
+data $1 = $1
+
+mkYesod "$1"  [parseRoutes|
+/ HomeR GET
+|]
+
+getHomeR  = defaultLayout [whamlet|Hello!!|]
+
+main :: IO ()
+main = warp 3000 $1
+

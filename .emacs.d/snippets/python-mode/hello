@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: hello
+# key: hello
+# author: dmj
+# --
+def hello():
+    print("Hello World!")

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cpp
+# key: cpp
+# author: dmj
+# --
+{-# LANGUAGE CPP #-}

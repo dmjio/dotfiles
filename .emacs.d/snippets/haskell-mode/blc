@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: blc
+# name: blc
+# contributor: David Johnson
+# --
+import qualified Data.ByteString.Lazy.Char8 as BLC

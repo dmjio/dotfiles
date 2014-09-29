@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: second
+# key: second
+# author: dmj
+# --
+second f = arr f <<< first swap <<< arr f
+  where swap ~(x,y) = (x,y)

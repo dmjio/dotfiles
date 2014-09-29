@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: qsvector
+# key: qsvector
+# author: dmj
+# --
+module QS where
+
+import           Control.Concurrent (threadDelay)
+import           Data.Vector
+import           Prelude            hiding (filter, head, init, null,
+tail,
+                                     (++))
+import           System.Random
+
+-- * fast quicksort
+qs :: Ord a => Vector a -> Vector a
+qs x | null x = empty
+qs xs = qs left ++ singleton x ++ qs right
+  where left  = filter (<x) $ tail xs
+        right = filter (>=x) $ tail xs
+        x = head xs
+
+main :: IO ()
+main = do
+  gen <- getStdGen
+  let xs = randomRs (1,10000000) gen :: [Integer]
+  let nums = fromList $ Prelude.take 100000 xs
+  putStrLn "Loaded vector into memory..."
+  threadDelay 100000000
+  print $ qs nums

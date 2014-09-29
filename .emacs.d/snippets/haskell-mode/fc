@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fc
+# key: fc
+# author: dmj
+# --
+{-# LANGUAGE FlexibleContexts #-}

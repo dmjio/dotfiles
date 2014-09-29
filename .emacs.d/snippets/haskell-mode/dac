@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dac
+# key: dac
+# author: dmj
+# --
+import Data.Acid

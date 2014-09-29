@@ -1,0 +1,4 @@
+# key: lazytostrict
+# name: lazytostrict
+# --
+lazyToStrict = B.concat $ BL.toChunks lazy

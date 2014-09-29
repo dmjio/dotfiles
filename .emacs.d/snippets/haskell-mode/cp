@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: cp
+# name: cp
+# contributor: David Johnson
+# --
+import Control.Parallel

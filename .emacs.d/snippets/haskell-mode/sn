@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: sn
+# name: sn
+# contributor: David Johnson
+# --
+import Snap

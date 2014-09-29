@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: crit
+# key: crit
+# author: dmjio
+# --
+import Criterion

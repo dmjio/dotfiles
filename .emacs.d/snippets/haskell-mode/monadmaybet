@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# key: monadmaybet
+# name: monadmaybet
+# contributor: David Johnson
+# --
+instance Monad m => Monad (MaybeT m) where
+    return = MaybeT . return . Just
+    m >>= f = MaybeT $ do maybe_value <- runMaybeT m
+                          case maybe_value of
+                            Nothing -> return Nothing
+                            Just x -> runMaybeT $ f x

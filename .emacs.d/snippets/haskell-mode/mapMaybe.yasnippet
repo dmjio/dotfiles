@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: mapMaybe
+# key: mapMaybe
+# --
+mapMaybe          :: (a -> Maybe b) -> [a] -> [b]
+mapMaybe _ []     = []
+mapMaybe f (x:xs) =
+ let rs = mapMaybe f xs in
+ case f x of
+  Nothing -> rs
+  Just r  -> r:rs

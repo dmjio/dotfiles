@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: acidserver
+# key: acidserver
+# author: dmj
+# --
+main :: IO ()
+main = bracket (openLocalState $ ${1:State})
+       closeAcidState $ acidServer skipAuthenticationCheck (PortNumber ${2:Port})

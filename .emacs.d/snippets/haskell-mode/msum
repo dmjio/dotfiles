@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: msum
+# name: msum
+# contributor: David Johnson
+# --
+msum :: MonadPlus m => [m a] -> m a
+msum = foldr mplus mzero

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: mt
+# key: mt
+# author: dmj
+# --
+margin-top : $1px;

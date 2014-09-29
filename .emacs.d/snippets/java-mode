@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ju
+# key: ju
+# author: dmjio
+# --
+import java.util

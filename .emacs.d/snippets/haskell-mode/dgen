@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dgen
+# key: dgen
+# author: dmj
+# --
+import Data.Generic

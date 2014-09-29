@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: scanr1
+# key: scanr1
+# --
+scanr1 :: (a -> a -> a) -> [a] -> [a]
+scanr1 _ [] = []
+scanr1 _ [x] = [x]
+scanr1 p (x:xs) = scanr p x xs

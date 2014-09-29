@@ -1,0 +1,31 @@
+# -*- mode: snippet -*-
+# key: fastserver
+# name: fastserver
+# contributor: David Johnson
+# --
+{-# LANGUAGE OverloadedStrings #-}
+
+-- brew install httperf
+-- httperf --server=localhost --port=5002 --uri=/ --num-conns=10000
+
+import           Control.Concurrent
+import           Data.ByteString.Char8
+import qualified Data.ByteString.Char8     as BC
+import           Network                   hiding (accept)
+import           Network.Socket
+import           Network.Socket.ByteString (sendAll)
+import           System.IO
+
+main = withSocketsDo $ do
+         sock <- listenOn $ PortNumber 5002
+         loop sock
+
+loop sock = do
+  (conn, _) <- accept sock
+  forkIO $ body conn
+  loop sock
+      where
+        body c = do sendAll c msg
+                    sClose c
+
+msg = "HTTP/1.0 200 OK\r\nContent-Length: 5\r\n\r\nPong!\r\n"

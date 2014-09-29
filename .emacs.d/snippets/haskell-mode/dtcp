@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dtcp
+# key: dtcp
+# author: dmj
+# --
+import           Data.Time.Clock.POSIX

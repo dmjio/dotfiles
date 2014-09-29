@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: statefunctor
+# key: statefunctor
+# author: dmj
+# --
+instance Functor (State s) where
+    fmap f (State g) = State $ \initState ->
+                       let (a, newState) = g initState
+                       in (f a, newState)

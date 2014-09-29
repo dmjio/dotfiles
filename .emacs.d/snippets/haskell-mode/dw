@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dw
+# name: dw
+# contributor: David Johnson
+# --
+import Data.Word

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dm
+# name: dm
+# contributor: David Johnson
+# --
+import Data.Monoid

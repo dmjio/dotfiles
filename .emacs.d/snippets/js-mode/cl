@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cl
+# key: cl
+# author: dmj
+# --
+console.log($1)

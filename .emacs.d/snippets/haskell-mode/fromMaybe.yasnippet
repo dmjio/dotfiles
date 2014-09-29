@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: fromMaybe
+# key: fromMaybe
+# --
+-- | The 'fromMaybe' function takes a default value and and 'Maybe'
+-- value.  If the 'Maybe' is 'Nothing', it returns the default values;
+-- otherwise, it returns the value contained in the 'Maybe'.
+fromMaybe     :: a -> Maybe a -> a
+fromMaybe d x = case x of {Nothing -> d;Just v  -> v}

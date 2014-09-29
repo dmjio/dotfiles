@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: cmtrans
+# name: cmtrans
+# contributor: David Johnson
+# --
+import Control.Monad.Trans.Class (MonadTrans(lift))

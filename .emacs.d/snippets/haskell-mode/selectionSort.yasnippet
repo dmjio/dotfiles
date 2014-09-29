@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: selectionSort
+# key: selectionSort
+# --
+selectSort :: (Ord a) ⇒ [a] → [a]
+selectSort = unfoldr select
+
+select :: (Ord a) ⇒ [a] → Maybe (a, [a])
+select [] = Nothing
+select (x : xs) =
+    case select xs of
+      Nothing → Just (x, [ ])
+      Just (y, ys)
+          | x <= y → Just (x, xs)
+          | otherwise → Just (y, x : ys)

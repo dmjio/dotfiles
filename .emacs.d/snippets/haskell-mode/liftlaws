@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: liftlaws
+# name: liftlaws
+# contributor: David Johnson
+# --
+lift . return   =  return
+lift (m >>= f)  =  lift m >>= (lift . f)

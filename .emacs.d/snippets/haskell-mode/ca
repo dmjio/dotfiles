@@ -1,0 +1,4 @@
+# key: ca
+# name: ca
+# --
+import           Control.Applicative

@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: guessinggame
+# key: guessinggame
+# author: dmj
+# --
+import           System.Random
+
+main :: IO ()
+main = do
+  gen <- getStdGen
+  let nums = take 100 $ randomRs (1,10) gen :: [Int]
+  putStrLn "Welcome to Guess the Number, guess a number 1-10 (only get 10 chances)"
+  loop nums
+  putStrLn "Would you like to play again? (y/n)"
+  c <- getLine
+  case c of
+    "y" -> main
+    _ -> putStrLn "goodbye"
+
+loop :: [Int] -> IO ()
+loop [] = putStrLn "You Lose!!!!"
+loop (x:xs) = do
+  guess <- fmap read getLine
+  case compare (guess :: Int) x of
+    LT -> putStrLn "Too low!" >> loop xs
+    GT -> putStrLn "Too high!" >> loop xs
+    _  -> putStrLn "You win!"

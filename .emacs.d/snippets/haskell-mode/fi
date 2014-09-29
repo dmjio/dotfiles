@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fi
+# key: fi
+# author: dmj
+# --
+{-# LANGUAGE FlexibleInstances #-}

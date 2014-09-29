@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: and
+# key: and
+# --
+and :: [Bool] -> Bool -- foldr (&&) True
+and [] = True
+and (x:xs) = x && (and xs)
+

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: update
+# key: update
+# author: dmjio
+# --
+$1 :: $2 -> Update DB ()
+$1 = $3

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dgth
+# key: dgth
+# author: dmjio
+# --
+import Database.Groundhog.TH

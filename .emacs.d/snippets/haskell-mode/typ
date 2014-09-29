@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: ty
+# name: ty
+# contributor: David Johnson
+# --
+type ${1:Alias} = ${2:Type}

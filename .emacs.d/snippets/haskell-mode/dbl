@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dbl
+# key: dbl
+# author: dmj
+# --
+import qualified Data.ByteString.Lazy as L

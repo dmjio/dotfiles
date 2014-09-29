@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: mfix
+# key: mfix
+# --
+class Monad m => MonadFix m where
+    mfix :: (a -> m a) -> m a

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: rws
+# key: rws
+# author: dmj
+# --
+import Control.Monad.RWS

@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: treegraph
+# key: treegraph
+# author: dmj
+# --
+import           Data.Graph
+import           Data.List
+import           Data.Tree
+
+verts = take 5 $ [ (x,x) | x <- [1..10] ]
+verts' = verts ++ take 4 [ (x+1,x) | x <- [1..10] ]
+bounds = (0,10)
+g = buildG bounds verts'
+t = Node "h" [
+          Node "e" [
+           Node "l" [], Node "l" [
+                     Node "o" []
+                    ]
+          ], Node "t" [Node "h" [Node "e" [Node "r" [Node "e" []]]]]
+         ]
+
+height = length . levels
+main :: IO ()
+main = putStrLn . drawForest $ [t]

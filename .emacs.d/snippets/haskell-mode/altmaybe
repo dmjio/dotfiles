@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: altmaybe
+# name: altmaybe
+# contributor: David Johnson
+# --
+instance Alternative Maybe where
+    empty = Nothing
+    Nothing <|> r = r
+    l <|> _       = l

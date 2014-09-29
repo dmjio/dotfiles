@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ssas
+# key: ssas
+# author: dmjio
+# --
+import           Snap.Snaplet.AcidState

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mayb
+# key: mayb
+# --
+maybe :: b -> (a -> b) -> Maybe a -> b
+maybe x _ Nothing = x
+maybe _ f (Just y) = f y

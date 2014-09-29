@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: bst
+# name: bst
+# contributor: David Johnson
+# --
+data STree a = Empty | Split a (STree a) (STree a)

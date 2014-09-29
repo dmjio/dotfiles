@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: f
+# key: f
+# author: dmj
+# --
+function $1() {
+  $2
+}

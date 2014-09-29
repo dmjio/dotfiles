@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: mptc
+# key: mptc
+# author: dmj
+# --
+{-# LANGUAGE MultiParamTypeClasses #-}

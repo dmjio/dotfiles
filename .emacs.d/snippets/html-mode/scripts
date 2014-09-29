@@ -1,0 +1,5 @@
+# key: scripts
+# name: scripts
+# author: dmj
+# --
+<script src="$1"></script>

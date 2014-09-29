@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: monadtransmaybet
+# name: monadtransmaybet
+# contributor: David Johnson
+# --
+instance MonadTrans MaybeT where
+    lift m = MaybeT (m >>= return . Just)

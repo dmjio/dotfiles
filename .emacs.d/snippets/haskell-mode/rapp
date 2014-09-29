@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: rapp
+# name: rapp
+# contributor: David Johnson
+# --
+(*>) :: Applicative f => f a -> f b -> f b
+(*>) = liftA2 (const id)

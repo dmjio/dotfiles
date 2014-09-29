@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: ap
+# name: ap
+# contributor: David Johnson
+# --
+ap :: Monad m => m (a -> b) -> m a -> m b
+ap mf ma = do
+  f <- mf
+  x <- ma
+  return $ f x

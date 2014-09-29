@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cmp
+# key: cmp
+# author: dmjio
+# --
+import Control.Monad.Plus

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: foldabletree
+# key: foldabletree
+# --
+instance F.Foldable Tree where
+    foldMap _ Empty = mempty
+    foldMap f (Node x l r) = F.foldMap f l `mappend`
+                             f x `mappend`
+                             F.foldMap f r

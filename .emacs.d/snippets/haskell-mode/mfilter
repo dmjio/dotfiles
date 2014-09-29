@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: mfilter
+# name: mfilter
+# contributor: David Johnson
+# --
+mfilter :: MonadPlus m => (a -> Bool) -> m a -> m a
+mfilter p m = do
+  a <- m
+  if p a then return a else mzero
+  

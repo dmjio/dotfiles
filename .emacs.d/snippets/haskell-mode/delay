@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: delay
+# key: delay
+# author: dmjio
+# --
+delay :: Int -> IO ()
+delay = let secs = (*1000000) in threadDelay . secs

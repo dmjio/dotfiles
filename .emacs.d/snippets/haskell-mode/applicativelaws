@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: applicativelaws
+# name: applicativelaws
+# contributor: David Johnson
+# --
+--Identity: pure id <*> v = v
+--Homomorphism: pure f <*> pure x = pure (f x)
+--Interchange: u <*> pure y = pure ($ y) <*> u
+--Composition: u <*> (v <*> w) = pure (.) <*> u <*> v <*> w

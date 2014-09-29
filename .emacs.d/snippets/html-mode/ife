@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: ife
+# key: ife
+# author: dmjio
+# --
+<ifEnvironment name="$1">
+               $2
+</ifEnvironment>

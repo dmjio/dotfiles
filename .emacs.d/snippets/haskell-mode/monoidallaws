@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# key: monoidallaws
+# name: monoidallaws
+# contributor: David Johnson
+# --
+
+-- Naturality (here: g *** h == \(x,y) -> (g x, h y))
+-- fmap (g *** h) (u ** v) = fmap g u ** fmap h v
+
+-- Left Identity
+-- unit ** v ≅ v
+-- In this and the following laws, ≅ refers to isomorphism rather than equality. In particular we consider (x,()) ≅ x ≅ ((),x) and ((x,y),z) ≅ (x,(y,z)).
+
+-- Right Identity
+-- u ** unit ≅ u
+
+-- Associativity
+-- u ** (v ** w) ≅ (u ** v) ** w
+
+-- All of the above laws are equivalent to the applicative laws
+-- Identity, Homomorphism, Interchangeability, Composition
+
+
+
+
+
+

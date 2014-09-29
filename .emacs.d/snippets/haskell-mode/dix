@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dix
+# name: dix
+# contributor: David Johnson
+# --
+import Data.Ix

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sti
+# key: sti
+# author: dmj
+# --
+import System.Time

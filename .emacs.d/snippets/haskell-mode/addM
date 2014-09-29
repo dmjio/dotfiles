@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: addM
+# key: addM
+# author: dmj
+# --
+addM :: Num a => Maybe a -> Maybe a -> Maybe a
+addM mx my | Just x <- mx, Just y <- my = Just $ x + y
+addM _ _ = Nothing

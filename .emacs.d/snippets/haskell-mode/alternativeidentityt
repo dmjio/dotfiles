@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: alternativeidentityt
+# name: alternativeidentityt
+# contributor: David Johnson
+# --
+instance (Alternative m) => Alternative (IdentityT m) where
+    empty = IdentityT empty
+    (<|>) = lift2IdentityT (<|>)

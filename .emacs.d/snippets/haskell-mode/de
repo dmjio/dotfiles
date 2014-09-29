@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: de
+# key: de
+# author: dmj
+# --
+import qualified Data.Enumerator as I

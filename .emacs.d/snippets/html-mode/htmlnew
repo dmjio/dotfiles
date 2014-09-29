@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: htmlnew
+# key: htmlnew
+# author: htmlnew
+# --
+<!doctype html>
+<html>
+   <head>
+
+   </head>
+   </body>
+   </body>
+</html>

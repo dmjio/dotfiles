@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dar
+# key: dar
+# author: dmj
+# --
+import Data.Acid.Remote

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: main
+# key: main
+# author: dmj
+# --
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: functorlist
+# name: functorlist
+# contributor: David Johnson
+# --
+instance Functor [] where
+    fmap _ []     = []
+    fmap f (x:xs) = f x : fmap f xs

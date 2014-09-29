@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dh
+# key: dh
+# author: dmjio
+# --
+import Data.Hashable

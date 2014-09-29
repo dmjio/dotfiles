@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: rwc
+# name: rwc
+# contributor: David Johnson
+# --
+{-# LANGUAGE RecordWildCards #-}

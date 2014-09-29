@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: ks
+# key: ks
+# --
+--These two combinators form a complete basis for the entire lambda
+--calculus. Every lambda calculus program can be written using just
+--these two functions.
+k :: a -> b -> a
+k = \x y -> x
+
+s :: (a -> b -> c) -> (a -> b) -> a -> c
+s = \x y z -> x z (y z)
+

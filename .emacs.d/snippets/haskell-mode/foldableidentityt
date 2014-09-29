@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: foldableidentityt
+# name: foldableidentityt
+# contributor: David Johnson
+# --
+instance (Foldable f) => Foldable (IdentityT f) where
+    foldMap f (IdentityT a) = foldMap f a

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: pairaa
+# name: pairaa
+# contributor: David Johnson
+# --
+data Pair a = Pair a a 

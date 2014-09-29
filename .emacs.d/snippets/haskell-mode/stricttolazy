@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: stricttolazy
+# key: stricttolazy
+# author: dmj
+# --
+strictToLazy = BL.fromChunks [strict]

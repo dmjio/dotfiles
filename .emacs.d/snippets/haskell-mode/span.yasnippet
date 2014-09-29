@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: span
+# key: span
+# --
+-- | span' :: (a -> Bool) -> [a] -> ([a],[a])
+-- | span' p xs = (dropWhile p xs, takeWhile p xs)
+
+span :: (a -> Bool) -> [a] -> ([a],[a])
+span p xs@[] = ([],[])
+span p xs@(x:xs')
+    | p x       = let (ys, zs) = span p xs' in (x:ys, zs)
+    | otherwise = ([],xs)

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fd
+# key: fd
+# author: dmj
+# --
+{-# LANGUAGE FunctionalDependencies #-}

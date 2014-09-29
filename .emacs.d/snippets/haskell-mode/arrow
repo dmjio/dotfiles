@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# key: arrow
+# name: arrow
+# contributor: David Johnson
+# --
+class Category a => Arrow a where
+  arr   :: (b -> c) -> a b c
+  (>>>) :: a b c -> a c d -> a b d
+  first :: a b c -> a (b, d) (c, d)
+  (***) :: a b c -> a b' c' -> a (b, b') (c, c')
+  (&&&) :: a b c -> a b c' -> a b (c, c')

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: dc
+# key: dc
+# author: dmj
+# --
+<div class="$1">
+    $2
+</div>

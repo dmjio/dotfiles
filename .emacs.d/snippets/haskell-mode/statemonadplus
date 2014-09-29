@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: statetmonadplus
+# key: statetmonadplus
+# author: dmj
+# --
+instance (MonadPlus m) => MonadPlus (StateT s m) where
+    mzero = StateT $ \s -> mzero
+    (StateT g) `mplus` (StateT f) = StateT $ \s -> (g s) `mplus` (f s)

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: lookup
+# key: lookup
+# --
+lookup :: Eq a => a -> [(a,b)] -> Maybe b
+lookup x [] = Nothing
+lookup x ((y,z):xs)
+    | x == y    = Just z
+    | otherwise = lookup x xs
+

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cmtr
+# key: cmtr
+# author: dmj
+# --
+import Control.Monad.Trans.Reader

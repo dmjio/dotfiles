@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: dist
+# key: dist
+# author: dmj
+# --
+import           Distribution.Simple
+
+main :: IO ()
+main = defaultMain

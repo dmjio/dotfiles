@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sio
+# key: sio
+# author: dmjio
+# --
+import System.IO.Error  

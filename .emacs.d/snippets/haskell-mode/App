@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: App
+# name: App
+# expand-env: ((yas-indent-line 'fixed))
+# contributor: David Johnson
+# --
+Applicative

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ssa
+# key: ssa
+# author: dmj
+# --
+import Snap.Snaplet.Auth

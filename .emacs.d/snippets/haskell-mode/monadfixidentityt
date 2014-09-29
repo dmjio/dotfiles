@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: monadfixidentityt
+# name: monadfixidentityt
+# contributor: David Johnson
+# --
+instance (MonadFix m) => MonadFix (IdentityT m) where
+    mfix f = IdentityT (mfix (runIdentityT . f))
+    

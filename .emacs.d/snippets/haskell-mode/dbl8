@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dbl8
+# key: dbl8
+# author: dmjio
+# --
+import qualified Data.ByteString.Lazy.Char8 as BL8

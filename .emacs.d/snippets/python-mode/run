@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: run
+# key: run
+# author: dmjio
+# --
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: insertionSort
+# key: insertionSort
+# --
+insert :: Ord a => a -> [a] -> [a]
+insert x [] = [x]
+insert x (y:xs)
+       | x <= y    = x : y : xs
+       | otherwise = y : insert x xs
+
+insertSort :: Ord a => [a] -> [a]
+insertSort = foldr insert []

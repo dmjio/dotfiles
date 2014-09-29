@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dci
+# key: dci
+# author: dmj
+# --
+import Data.CaseInsensitive

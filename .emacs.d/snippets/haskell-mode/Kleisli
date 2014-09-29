@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Kleisli
+# key: Kleisli
+# author: dmj
+# --
+newtype Kleisli m a b = Kleisli { runKleisli :: a -> m b }

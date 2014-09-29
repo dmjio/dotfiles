@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: length
+# key: length
+# --
+-- length = sum . map (+1)
+length :: [a] -> Int
+length xs    = len 0 xs where
+    len num [] = num
+    len num (_:xs) = len (num + 1) xs

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: hoog
+# key: hoog
+# --
+:def search return . (":! hoogle " ++)

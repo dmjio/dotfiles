@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: monadidentity
+# name: monadidentity
+# contributor: David Johnson
+# --
+instance Monad Identity where
+    return a = Identity a
+    m >>= k  = k (runIdentity m)

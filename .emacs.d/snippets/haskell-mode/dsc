@@ -1,0 +1,4 @@
+# key: dsc
+# name: dsc
+# --
+$(deriveSafeCopy 0 'base ''$1)

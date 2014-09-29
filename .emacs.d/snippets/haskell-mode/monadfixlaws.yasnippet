@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: monadfixlaws
+# key: monadfixlaws
+# --
+-- purity
+   -- mfix (return . h) = return (fix h)
+
+--left shrinking (or tightening)
+   -- mfix (\x -> a >>= \y -> f x y) = a >>= \y -> mfix (\x -> f x y)
+
+-- sliding
+   -- mfix (liftM h . f) = liftM h (mfix (f . h)), for strict h.
+
+-- nesting
+   -- mfix (\x -> mfix (\y -> f x y)) = mfix (\x -> f x x)

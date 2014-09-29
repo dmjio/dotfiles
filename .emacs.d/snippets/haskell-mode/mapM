@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# key: mapM
+# name: mapM
+# contributor: David Johnson
+# --
+mapM :: Monad m => (a -> m b) -> [a] -> m [b]
+mapM _ []     = return []
+mapM f (x:xs) = do
+  y <- f x
+  ys <- mapM f xs
+  return $ y:ys

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: monoidmaybe
+# name: monoidmaybe
+# contributor: David Johnson
+# --
+instance Monoid a => Monoid (Maybe a) where
+    mempty = Nothing
+    Nothing `mappend` _ = Nothing
+    _ `mappend` Nothing = Nothing
+    Just x `mappend` Just y = Just (x `mappend` y)

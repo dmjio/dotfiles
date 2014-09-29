@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: binarysearch
+# key: binarysearch
+# --
+binarySearch :: (Integral a, Ord b, Ix a) => 
+             Array a b -> b -> a -> a -> Maybe a
+binarySearch xs num lo hi
+    | hi < lo = Nothing
+    | pivot > num = binarySearch xs num lo (mid-1)
+    | pivot < num = binarySearch xs num (mid+1) hi
+    | otherwise= Just mid
+       where
+         mid= lo + (hi-lo) div 2
+         pivot= xs!mid

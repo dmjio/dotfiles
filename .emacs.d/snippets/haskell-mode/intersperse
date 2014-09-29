@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: intersperse
+# key: intersperse
+# author: dmj
+# --
+intersperse             :: a -> [a] -> [a]
+intersperse _   []      = []
+intersperse sep (x:xs)  = x : prependToAll sep xs

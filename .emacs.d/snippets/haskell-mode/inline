@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: inline
+# key: inline
+# author: dmj
+# --
+{-# INLINE ${1:function} #-}

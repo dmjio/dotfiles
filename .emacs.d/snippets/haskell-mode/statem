@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: statem
+# key: statem
+# author: dmj
+# --
+newtype State s a = State { runState :: s -> (a,s) }

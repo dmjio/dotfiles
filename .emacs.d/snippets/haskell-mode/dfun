@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dfun
+# key: dfun
+# author: dmj
+# --
+import Data.Functor

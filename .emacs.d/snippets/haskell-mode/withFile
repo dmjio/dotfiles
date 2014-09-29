@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: withFile
+# key: withFile
+# author: dmjio
+# --
+withFile :: FilePath -> IOMode -> (Handle -> IO r) -> IO r
+withFile name mode = bracket (openFile name mode) hClose

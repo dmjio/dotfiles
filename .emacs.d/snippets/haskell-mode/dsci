@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dsci
+# key: dsci
+# author: dmjio
+# --
+import Data.Scientific

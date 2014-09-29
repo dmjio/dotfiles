@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: con
+# key: con
+# author: dmj
+# --
+<div class="container">$1</div>

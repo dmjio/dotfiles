@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: os
+# name: os
+# contributor: David Johnson
+# --
+{-# LANGUAGE OverloadedStrings #-}

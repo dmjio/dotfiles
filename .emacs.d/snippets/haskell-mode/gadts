@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gadts
+# key: gadts
+# author: dmj
+# --
+{-# LANGUAGE GADTs #-}

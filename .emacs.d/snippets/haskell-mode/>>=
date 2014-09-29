@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: >>=
+# name: >>=
+# contributor: David Johnson
+# --
+(>>=) :: ${1:Monad} a -> (a -> $1 b) -> $1 b

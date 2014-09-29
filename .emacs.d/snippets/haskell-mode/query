@@ -1,0 +1,7 @@
+# key: query
+# name: query
+# --
+$1 :: Query DB $2
+$1 = do
+   db <- ask
+   $3

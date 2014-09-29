@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nwms
+# key: nwms
+# author: dmj
+# --
+import Network.Wai.Middleware.Static

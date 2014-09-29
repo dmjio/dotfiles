@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: pr
+# name: pr
+# contributor: https://github.com/polypus74
+# --
+import Prelude hiding ($1)

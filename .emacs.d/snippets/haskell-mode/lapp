@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: lapp
+# name: lapp
+# contributor: David Johnson
+# --
+(<*) :: Applicative f => f a -> f b -> f a
+(<*) = liftA2 const

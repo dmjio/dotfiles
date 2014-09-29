@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: set
+# key: set
+# --
+type Size = Int
+data Set a = Tip
+           | Bin {-# UNPACK #-} !Size a !(Set a) !(Set a)

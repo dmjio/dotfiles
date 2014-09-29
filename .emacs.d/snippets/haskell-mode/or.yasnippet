@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: or
+# key: or
+# --
+or :: [Bool] -> Bool -- foldr (||) False
+or [] = False
+or (x:xs) = x || (or xs)

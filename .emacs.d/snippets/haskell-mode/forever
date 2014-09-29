@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: forever
+# name: forever
+# contributor: David Johnson
+# --
+forever :: Monad m => m a -> m b
+forever a = let a' = a in a' >> forever a'

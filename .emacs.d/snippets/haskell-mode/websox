@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: websox
+# key: websox
+# author: dmjio
+# --
+import qualified Network.WebSockets as WS

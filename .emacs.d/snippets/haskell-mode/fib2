@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fib2
+# key: fib2
+# author: dmjio
+# --
+fib2 = unfoldr (\n -> Just (numerator n, 1/(1+n))) 0

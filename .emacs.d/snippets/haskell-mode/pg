@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: pg
+# key: pg
+# author: dmj
+# --
+{-# LANGUAGE PatternGuards #-}

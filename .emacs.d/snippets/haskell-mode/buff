@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nobuff
+# key: nobuff
+# author: dmj
+# --
+hSetBuffering h NoBuffering

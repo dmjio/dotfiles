@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: dbi
+# key: dbi
+# --
+import Data.Binary

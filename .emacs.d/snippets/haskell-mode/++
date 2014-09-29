@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: ++
+# name: ++
+# contributor: David Johnson
+# --
+(++) :: [a] -> [a] -> [a]
+[] ++ xs = xs
+(x:xs) ++ (ys) = x : xs ++ ys

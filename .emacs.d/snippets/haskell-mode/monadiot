@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: monadiot
+# name: monadiot
+# contributor: David Johnson
+# --
+instance (MonadIO m) => MonadIO (${1:Type}T m) where
+    liftIO = $1T $2
+    

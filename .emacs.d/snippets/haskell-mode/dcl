@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dcl
+# key: dcl
+# author: dmjio
+# --
+import qualified Data.Conduit.List as CL

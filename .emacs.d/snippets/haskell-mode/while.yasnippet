@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: while
+# key: while
+# --
+while :: (Monad m) => m Bool -> m a -> m ()
+while cond action = do
+  c <- cond
+  when c $ do
+    action
+    while cond action

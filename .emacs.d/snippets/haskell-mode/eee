@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: eee
+# name: eee
+# contributor: David Johnson
+# --
+Another instance of Functor that we've been dealing with all along but didn't know was a Functor is (->) r. You're probably slightly confused now, since what the heck does (->) r mean? The function type r -> a can be rewritten as (->) r a, much like we can write 2 + 3 as (+) 2 3. When we look at it as (->) r a, we can see (->) in a slighty different light, because we see that it's just a type constructor that takes two type parameters, just like Either. But remember, we said that a type constructor has to take exactly one type parameter so that it can be made an instance of Functor. That's why we can't make (->) an instance of Functor, but if we partially apply it to (->) r, it doesn't pose any problems. If the syntax allowed for type constructors to be partially applied with sections (like we can partially apply + by doing (2+), which is the same as (+) 2), you could write (->) r as (r ->). How are functions functors? Well, let's take a look at the implementation, which lies in Control.Monad.Instances

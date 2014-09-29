@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: idb
+# key: idb
+# author: dmjio
+# --
+import Data.Bool

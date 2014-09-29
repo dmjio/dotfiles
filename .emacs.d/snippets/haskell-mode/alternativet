@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: alternativet
+# name: alternativet
+# contributor: David Johnson
+# --
+instance (Alternative m) => Alternative (${1:Type}T m) where
+    empty = $1T empty
+    (<|>) = $2
+    

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dtime
+# key: dtime
+# author: dmj
+# --
+import Data.Time

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: hspec
+# key: hspec
+# author: dmjio
+# --
+import Test.Hspec

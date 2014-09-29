@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: applist
+# name: applist
+# contributor: David Johnson
+# --
+instance Applicative [] where
+    pure x = [x]
+    ff <*> fx = [ f x | f <- ff, x <- fx ]

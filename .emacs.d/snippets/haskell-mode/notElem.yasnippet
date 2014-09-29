@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: notElem
+# key: notElem
+# --
+notElem :: Eq a => a -> [a] -> Bool
+notElem x = all (/=x)

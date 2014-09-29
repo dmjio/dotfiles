@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: hand
+# key: hand
+# author: dmj
+# --
+$1 :: Handler App (AuthManager App) ()
+$1 = $2

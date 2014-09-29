@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: dotrans
+# name: dotrans
+# contributor: David Johnson
+# --
+--do e → e
+--do { e; stmts } → e >> do { stmts }
+--do { v <- e; stmts } → e >>= \v -> do { stmts }
+--do { let decls; stmts} → let decls in do { stmts }

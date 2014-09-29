@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: bs64
+# name: bs64
+# contributor: David Johnson
+# --
+import Data.ByteString.Base64 (encode, decode)

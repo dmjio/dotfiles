@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: concatMapM
+# name: concatMapM
+# contributor: David Johnson
+# --
+concatMapM :: (Monad m) => (a -> m [b]) -> [a] -> m [b]
+concatMapM f = liftM concat . mapM

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: repeat
+# key: repeat
+# --
+repeat :: a -> [a]
+repeat x = xs where xs = x : repeat x

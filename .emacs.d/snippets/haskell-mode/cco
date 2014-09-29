@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: cco
+# name: cco
+# contributor: David Johnson
+# --
+import Control.Concurrent

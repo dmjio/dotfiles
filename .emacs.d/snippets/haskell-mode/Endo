@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Endo
+# key: Endo
+# author: dmj
+# --
+newtype Endo a = Endo { appEndo :: a -> a }

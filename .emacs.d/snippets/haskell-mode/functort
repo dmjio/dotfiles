@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: functort
+# name: functort
+# contributor: David Johnson
+# --
+instance (Functor m) => Functor (${1:Type}T m) where
+    fmap f $2 = $3
+    

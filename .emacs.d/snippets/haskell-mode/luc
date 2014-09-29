@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: luc
+# key: luc
+# author: dmj
+# --
+[lucius| $1 |]

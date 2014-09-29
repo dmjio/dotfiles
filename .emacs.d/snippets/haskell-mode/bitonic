@@ -1,0 +1,48 @@
+# -*- mode: snippet -*-
+# name: bitonic
+# key: bitonic
+# author: dmj
+# --
+import           Control.Monad (forM_)
+import           Data.Sequence
+import           Prelude       hiding (drop, head, last, length,
+splitAt, take)
+
+-- Finger Tree (aka Palm Tree) used to find max values in a bitonic
+   sequence
+bitonic :: (Ord a, Num a) => Seq a -> a
+bitonic x | x == empty    = error "Empty sequence"
+          | length x == 1 = index x 0
+          | otherwise     = let (l, m, r) = splitter x
+                            in handle l m r
+
+-- * O(log(min(i,n-i))) due to splitAt, take, drop. length is O(1)
+splitter :: Seq a -> (Seq a, a, Seq a)
+splitter x = (left, mid, right)
+  where
+    (left,r) = splitAt ((`div` 2) . length $ x) x
+    (mid,right) = (index (take 1 r) 0, drop 1 r)
+
+-- * O(log(min(i,n-i))) -- length is O(1) and index O(log(min(i,n-i)))
+last :: Seq a -> a
+last xs = let len = length xs in index xs (len-1)
+
+-- * O(log(min(i,n-i)))
+head :: Seq a -> a
+head xs = index xs 0
+
+-- * O(log(min(i,n-i))) due to head
+handle :: (Ord a, Num a) => Seq a -> a -> Seq a -> a
+handle left x right
+       | last left > x && x > y = bitonic $ left |> x
+       | last left < x && x < y = bitonic $ x <| right
+       | last left < x && x > y = x
+  where y = head right
+handle _ _ _ = error "your sequence isn't bitonic"
+
+tests :: [[Int]]
+tests  =
+[[9],[1,2,3,4,5,6,7,8,9,8,7],[1,2,3,4,5,6,7,8,9,8,7,6],[1,2,3,4,3,2,1],[]]
+
+main :: IO ()
+main = forM_ tests (print . bitonic . fromList)

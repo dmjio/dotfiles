@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: spf
+# key: spf
+# author: dmj
+# --
+import System.Posix.Files

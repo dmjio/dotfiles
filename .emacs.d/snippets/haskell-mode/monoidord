@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: monoidord
+# name: monoidord
+# contributor: David Johnson
+# --
+instance Monoid Ordering where
+	mempty = EQ
+	LT `mappend` _   = LT
+	EQ `mappend` _ y = y
+	GT `mappend` _   = GT

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dc
+# name: Data.Char
+# contributor: David Johnson
+# --
+import Data.Char

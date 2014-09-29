@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wsc
+# key: wsc
+# author: dmj
+# --
+import Web.Stripe.Customer

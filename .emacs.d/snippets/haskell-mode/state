@@ -1,0 +1,32 @@
+# -*- mode: snippet -*-
+# name: state
+# key: state
+# author: dmj
+# --
+newtype State s a = State { runState :: s -> (a,s) }
+
+instance Functor (State s) where
+    fmap f (State g) = State $ \initState ->
+                       let (a, newState) = g initState
+                       in (f a, newState)
+
+instance Monad (State s) where
+    return a = State $ \s -> (a,s)
+    f >>= g = State $ \s -> let (a, b) = runState f s
+                            in runState (g a) b
+
+class MonadState s a | s -> a where
+    get :: State s s
+    put :: s -> State s ()
+    modify :: (s -> s) -> State s ()
+
+instance MonadState s (State s s) where
+    get = State $ \s -> (s,s)
+    put s = State $ \_ -> ((),s)
+    modify = undefined
+
+evalState :: State s a -> s -> a
+evalState act = fst . runState act
+
+execState :: State s a -> s -> s
+execState act = snd . runState act

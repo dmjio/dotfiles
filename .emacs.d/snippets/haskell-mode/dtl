@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dtl
+# key: dtl
+# author: dmj
+# --
+import qualified Data.Text.Lazy as LT

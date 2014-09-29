@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: lth
+# key: lth
+# author: dmj
+# --
+import Language.Haskell.TH

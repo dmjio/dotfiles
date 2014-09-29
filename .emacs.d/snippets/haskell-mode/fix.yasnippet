@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: fix
+# key: fix
+# --
+fix :: (a -> a) -> a
+fix f = f (fix f)
+

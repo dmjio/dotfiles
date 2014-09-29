@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: traversableidentityt
+# name: traversableidentityt
+# contributor: David Johnson
+# --
+instance (Traversable f) => Traversable (IdentityT f) where
+    traverse f (IdentityT a) = IdentityT <$> traverse f a
+    

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: cl
+# name: cl
+# expand-env: ((yas-indent-line 'fixed))
+# contributor: David Johnson
+# --
+import Control.Lens

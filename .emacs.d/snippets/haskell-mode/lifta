@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: lifta
+# name: lifta
+# contributor: David Johnson
+# --
+liftA :: Applicative f => (a -> b) -> f a -> f b
+liftA f a = pure f <*> a -- or (<$>)

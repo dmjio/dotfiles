@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: monadlist
+# name: monadlist
+# contributor: David Johnson
+# --
+instance  Monad []  where
+    m >>= k             = foldr ((++) . k) [] m
+    m >> k              = foldr ((++) . (\ _ -> k)) [] m
+    return x            = [x]
+    fail _              = []

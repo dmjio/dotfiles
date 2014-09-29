@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: snh
+# name: snh
+# contributor: David Johnson
+# --
+import Snap.Snaplet.Heist

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: iy
+# key: iy
+# author: dmj
+# --
+import Yesod

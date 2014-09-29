@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: ffitest
+# key: ffitest
+# author: dmjio
+# --
+{-# LANGUAGE ForeignFunctionInterface #-}
+
+import           Control.Monad
+import           Foreign.C.Types
+
+foreign import ccall unsafe "stdlib.h rand"
+     c_rand :: IO CUInt
+
+foreign import ccall unsafe "stdlib.h getchar"
+     getc :: IO CUChar
+
+
+main :: IO ()
+main = do a <- getc
+          print a
+

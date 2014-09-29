@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: a
+# key: a
+# author: dmj
+# --
+alias $1="$2"

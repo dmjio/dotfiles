@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: bbbe
+# key: bbbe
+# author: dmj
+# --
+import Blaze.ByteString.Builder.Enumerator

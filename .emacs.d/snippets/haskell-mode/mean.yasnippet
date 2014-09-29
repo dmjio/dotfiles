@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: mean
+# key: mean
+# --
+mean :: Fractional a => [a] -> a
+mean xs = s / fromIntegral l where
+    (s,l) = foldl' step (0,0) xs
+    step (!s,!l) a = (s + a, l + 1)

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: migration
+# key: migration
+# author: dmjio
+# --
+instance Migrate $1 where
+     type MigrateFrom $1 = $2
+     migrate ($2)

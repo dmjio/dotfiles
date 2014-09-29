@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: rnt
+# key: rnt
+# author: dmj
+# --
+{-# LANGUAGE RankNTypes #-}

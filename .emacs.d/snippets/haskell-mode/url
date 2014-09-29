@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: url
+# key: url
+# author: dmj
+# --
+module Main where -- redundant since Main is in the default
+
+import qualified Data.ByteString.Lazy.UTF8 as L
+import           Data.Char
+import           Network.HTTP.Conduit      (simpleHttp)
+import           System.Environment
+
+main :: IO ()
+main = do
+  (url:_) <- getArgs
+  page <- simpleHttp url
+  putStr (L.toString page)

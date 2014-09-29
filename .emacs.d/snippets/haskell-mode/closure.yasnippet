@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: closure
+# key: closure
+# --
+A closure, the opposite of a combinator, is a function that makes use
+of free variables in its definition. It 'closes' around some portion
+of its environment.for example
+f x = (\y -> x + y)
+f returns a closure, because the variable x, which is bound outside of the lambda ab
+straction is used inside its definition. An interesting side note: the
+context in which x was bound shouldn't even exist anymore, and
+wouldn't, had 
+the lambda abstraction not closed around x.
+
+

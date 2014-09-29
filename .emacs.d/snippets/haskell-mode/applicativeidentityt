@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: applicativeidentityt
+# name: applicativeidentityt
+# contributor: David Johnson
+# --
+instance (Applicative m) => Applicative (IdentityT m) where
+    pure x = IdentityT (pure x)
+    (<*>) = lift2IdentityT (<*>)

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: dual
+# name: dual
+# contributor: David Johnson
+# --
+newtype Dual a = Dual { getDual :: a } 
+	deriving (Show, Eq, Ord, Bounded, Read)

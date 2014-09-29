@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: applicative
+# name: applicative
+# expand-env: ((yas-indent-line 'fixed))
+# contributor: David Johnson
+# --
+infixl 4 <*>
+class Applicative f where
+    pure :: a -> f a
+    (<*>) :: f (a -> b) -> f a -> f b

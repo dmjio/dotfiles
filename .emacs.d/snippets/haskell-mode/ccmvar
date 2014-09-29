@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ccmvar
+# key: ccmvar
+# author: dmjio
+# --
+import Control.Concurrent.MVar

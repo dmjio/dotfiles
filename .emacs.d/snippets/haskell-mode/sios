@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sios
+# key: sios
+# author: dmj
+# --
+import           System.IO.Streams (InputStream, OutputStream)
+import qualified System.IO.Streams as Streams

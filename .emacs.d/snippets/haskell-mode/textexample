@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: textexample
+# key: textexample
+# author: dmj
+# --
+import           Data.Text    (Text)
+import qualified Data.Text    as T
+import qualified Data.Text.IO as T
+
+hello :: String
+hello      = "你好"
+helloBytes :: Text
+helloBytes = T.pack hello
+
+main = do
+    putStrLn hello
+    T.putStrLn helloBytes
+    print $ T.length helloBytes

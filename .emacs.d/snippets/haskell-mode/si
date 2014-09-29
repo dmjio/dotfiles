@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: si
+# key: si
+# author: dmj
+# --
+import System.IO

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: applicativet
+# name: applicativet
+# contributor: David Johnson
+# --
+instance (Applicative m) => Applicative (${1:Class}T m) where
+    pure x = $1T $2
+    (<*>) = $3
+    

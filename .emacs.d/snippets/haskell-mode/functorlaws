@@ -1,0 +1,7 @@
+ # -*- mode: snippet -*-
+# key: functorlaws
+# name: functorlaws
+# contributor: David Johnson
+# --
+-- fmap id  ==  id
+-- fmap (f . g)  ==  fmap f . fmap g

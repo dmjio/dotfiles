@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: get
+# key: get
+# author: dmj
+# --
+$.get('/$1', function($2) {
+
+}).error(console.log);

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: person
+# name: person
+# contributor: David Johnson
+# --
+data Person = Person
+    { name :: String
+    , age  :: Int
+    } deriving (Show, Eq)
+    

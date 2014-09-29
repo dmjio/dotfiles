@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: prependToAll
+# key: prependToAll
+# author: dmj
+# --
+prependToAll            :: a -> [a] -> [a]
+prependToAll _   []     = []
+prependToAll sep (x:xs) = sep : x : prependToAll sep xs

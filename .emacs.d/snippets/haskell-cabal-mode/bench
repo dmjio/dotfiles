@@ -1,0 +1,11 @@
+# key: bench
+# name: bench
+# --
+Benchmark ${1:Benchmark-Name}
+    type:       exitcode-stdio-1.0
+    main-is:    ${2:File}.hs
+    build-depends: base
+                 , time
+                 , criterion
+    default-language:    Haskell2010
+    ghc-options:  -Wall

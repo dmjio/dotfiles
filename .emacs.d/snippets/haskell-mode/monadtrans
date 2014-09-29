@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: monadtrans
+# name: monadtrans
+# contributor: David Johnson
+# --
+class MonadTrans t where
+    lift :: (Monad m) => m a -> t m a

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: nws
+# key: nws
+# author: dmjio
+# --
+import qualified Network.WebSockets as WS       
+import qualified Network.WebSockets.Snap as WS       

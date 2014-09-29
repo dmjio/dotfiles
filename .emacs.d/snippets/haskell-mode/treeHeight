@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: treeheight
+# name: treeheight
+# contributor: David Johnson
+# --
+treeHeight :: Tree a -> Int
+treeHeight Empty = 0
+treeHeight (Node left right) = max (treeHeight left + 1) (treeHeight right + 1)

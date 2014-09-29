@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: d
+# name: d
+# contributor: David Johnson
+# --
+deriving ($1)

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: mmw
+# key: mmw
+# author: dmjio
+# --
+module Main where

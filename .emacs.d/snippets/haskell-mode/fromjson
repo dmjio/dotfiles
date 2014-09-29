@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: fromjson
+# key: fromjson
+# author: dmjio
+# --
+instance FromJSON $1 where
+   parseJSON (Object o) = $2  

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: ah
+# key: ah
+# author: dmjio
+$1 :: Handler App (AuthManager App) ()
+$1 = method $2 handle$2
+  where handle$2 = currentUser >>= maybe the404 handleUser
+        handleUser AuthUser{..} = do
+           if Role "admin" `elem` userRoles
+              then do $3
+              else the404

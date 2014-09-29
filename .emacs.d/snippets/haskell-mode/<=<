@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: <=<
+# name: <=<
+# contributor: David Johnson
+# --
+(<=<) :: Monad m => (b -> m c) -> (a -> m b) -> a -> m c
+(<=<) = flip (>=>)

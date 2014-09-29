@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gntd
+# key: gntd
+# author: dmj
+# --
+{-# LANGUAGE GeneralizedNewtypeDeriving #-}

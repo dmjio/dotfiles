@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: da
+# name: da
+# contributor: David Johnson
+# --
+import Data.Aeson

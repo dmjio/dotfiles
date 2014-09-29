@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: ft
+# name: ft
+# contributor: David Johnson
+# --
+${1:name} :: ${2:Class} => ${3:a} -> ${4:b}
+$1 = 

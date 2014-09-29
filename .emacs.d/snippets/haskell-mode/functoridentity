@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: functoridentity
+# name: functoridentity
+# contributor: David Johnson
+# --
+instance Functor Identity where
+    fmap f m = Identity (f (runIdentity m))

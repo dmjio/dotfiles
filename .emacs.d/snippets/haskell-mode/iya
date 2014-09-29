@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: iya
+# key: iya
+# author: dmj
+# --
+import Yesod.Auth

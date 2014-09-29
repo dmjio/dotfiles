@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dal
+# key: dal
+# author: dmj
+# --
+import Data.Acid.Local

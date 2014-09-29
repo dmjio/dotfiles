@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: dbps
+# key: dbps
+# author: dmj
+# --
+import Database.Persist.Sqlite
+    ( ConnectionPool, SqlPersist, runSqlPool, runMigration
+    , createSqlitePool
+    )

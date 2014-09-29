@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: spio
+# key: spio
+# author: dmj
+# --
+import System.Posix.IO

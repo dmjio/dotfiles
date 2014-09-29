@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sad
+# key: sad
+# author: dmjio
+# --
+{-# LANGUAGE StandaloneDeriving      #-}

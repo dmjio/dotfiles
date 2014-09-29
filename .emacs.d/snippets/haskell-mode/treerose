@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: treerose
+# name: treerose
+# contributor: David Johnson
+# --
+data RoseTree a = Node a [RoseTree a]

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dtrav
+# name: dtrav
+# contributor: David Johnson
+# --
+import Data.Traversable ${1:(Traversable(traverse))}

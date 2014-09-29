@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: functore
+# name: functore
+# contributor: David Johnson
+# --
+instance Functor ((->) e) where
+   fmap = (.)

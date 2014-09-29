@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: du
+# key: du
+# author: dmjio
+# --
+import Data.Unique

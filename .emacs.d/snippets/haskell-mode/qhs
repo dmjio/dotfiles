@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: qhs
+# name: qhs
+# contributor: David Johnson
+# --
+quickHttpServe $1

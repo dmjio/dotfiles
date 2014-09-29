@@ -1,0 +1,4 @@
+# key: mkl
+# name: mkl
+# --
+$(makeLenses ''${1:Name})

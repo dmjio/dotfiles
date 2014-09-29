@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ddt
+# key: ddt
+# author : dmj
+# --
+{-# LANGUAGE DeriveDataTypeable   #-}

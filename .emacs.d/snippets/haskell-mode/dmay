@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dmay
+# key: dmay
+# author: dmjio
+# --
+import Data.Maybe

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: endomonoid
+# key: endomonoid
+# author: dmj
+# --
+instance Monoid (Endo a) where
+    mempty = Endo id
+    mappend (Endo f) (Endo g) = Endo (f . g)

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tf
+# key: tf
+# author: dmj
+# --
+{-# LANGUAGE TypeFamilies #-}

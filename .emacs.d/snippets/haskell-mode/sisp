@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sisp
+# key: sisp
+# author: dmjio
+# --
+import System.IO.Streams.Process

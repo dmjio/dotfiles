@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: liftM
+# name: liftM
+# contributor: David Johnson
+# --
+liftM :: Monad m => (a -> b) -> m a -> m b
+liftM f ma = ma >>= return . f

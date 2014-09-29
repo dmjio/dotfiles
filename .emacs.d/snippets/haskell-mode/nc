@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nc
+# key: nc
+# author: dmjio
+# --
+import Network.Connection

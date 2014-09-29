@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: sequence_
+# name: sequence_
+# contributor: David Johnson
+# --
+sequence_  =  foldr (>>) (return ())

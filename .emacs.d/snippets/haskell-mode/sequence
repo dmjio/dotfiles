@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# key: sequence
+# name: sequence
+# contributor: David Johnson
+# --
+sequence :: Monad m => [m a] -> m [a]
+sequence xs = foldr k (return []) xs where
+	k ma mb = do
+		a <- ma
+		b <- mb
+		return (a:b)
+		

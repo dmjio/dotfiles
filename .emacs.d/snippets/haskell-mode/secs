@@ -1,0 +1,5 @@
+# key: secs
+# name: secs
+# --
+secs :: Int -> Int
+secs = (*1000000)

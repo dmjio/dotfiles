@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: monadtransidentityt
+# name: monadtransidentityt
+# contributor: David Johnson
+# --
+instance MonadTrans IdentityT where
+    lift = IdentityT
+    

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: monadlistt
+# name: monadlistt
+# contributor: David Johnson
+# --
+instance (Monad m) => Monad (ListT m) where
+    return x = ListT . return $ [x]
+    m >>= f = ListT $ do vals <- runListT m
+                         xs <- mapM (runListT . f) vals
+                         return (concat xs)

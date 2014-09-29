@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: mappend
+# name: mappend
+# contributor: David Johnson
+# --
+infixr 6 (<>)
+(<>) :: (Monoid a) => a -> a -> a
+(<>) = mappend

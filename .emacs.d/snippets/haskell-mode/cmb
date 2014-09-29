@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cmb
+# key: cmb
+# author: dmj
+# --
+import Control.Monad.Base

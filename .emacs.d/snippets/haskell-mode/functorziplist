@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: functorziplist
+# name: functorziplist
+# contributor: David Johnson
+# --
+instance Functor ZipList where
+   fmap f (ZipList xs) = ZipList $ map f xs

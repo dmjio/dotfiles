@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dby
+# key: dby
+# author: dmjio
+# --
+import Data.Byteable

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ddeq
+# key: ddeq
+# author: dmj
+# --
+import qualified Data.Dequeue as DQ

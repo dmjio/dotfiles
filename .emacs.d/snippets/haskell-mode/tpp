@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tpp
+# key: tpp
+# author: dmj
+# --
+import Text.ParserCombinators.Parsec

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: sd
+# name: sd
+# contributor: David Johnson
+# --
+serveDirectory "${1:static}"

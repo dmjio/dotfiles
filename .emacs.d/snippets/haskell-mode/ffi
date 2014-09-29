@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ffi
+# key: ffi
+# author: dmj
+# --
+{-# LANGUAGE ForeignFunctionInterface  #-}

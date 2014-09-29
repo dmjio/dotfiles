@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: mka
+# key: mka
+# author: dmj
+# --
+$(makeAcidic' ''$1 ['$2])

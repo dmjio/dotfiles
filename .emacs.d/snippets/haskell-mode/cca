@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cca
+# key: cca
+# author: dmjio
+# --
+import Control.Concurrent.Async

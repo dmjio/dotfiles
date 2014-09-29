@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: dte
+# name: dte
+# contributor: David Johnson
+# --
+import qualified Data.Text.Encoding as T

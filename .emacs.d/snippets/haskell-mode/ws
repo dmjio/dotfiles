@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ws
+# key: ws
+# author: dmj
+# --
+import Web.Scotty

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sft
+# key: sft
+# author: dmjio
+# --
+import System.File.Tree

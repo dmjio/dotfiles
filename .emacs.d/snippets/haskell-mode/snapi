@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key: snapi
+# name: snapi
+# contributor: David Johnson
+# --
+${1:init} :: SnapletInit ${2:App} $2
+$1 = makeSnaplet "${3:name}" "${4:description}" Nothing $ do
+	addRoutes [("", ${5:handler})]
+	return $ $2 { }

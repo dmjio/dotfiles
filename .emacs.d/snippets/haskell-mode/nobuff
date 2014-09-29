@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: nobuff
+# name: nobuff
+# contributor: David Johnson
+# --
+hSetBuffering stdout NoBuffering

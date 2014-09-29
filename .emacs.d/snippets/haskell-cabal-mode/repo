@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: repo
+# key: repo
+# author: dmjio
+# --
+source-repository head
+  type:     git
+  location: $1

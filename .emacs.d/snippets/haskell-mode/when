@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: when
+# name: when
+# contributor: David Johnson
+# --
+when :: Monad m => Bool -> m () -> m ()
+when p s  = if p then return () else s

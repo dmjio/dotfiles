@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sfp
+# key: sfp
+# author: dmj
+# --
+import System.FilePath

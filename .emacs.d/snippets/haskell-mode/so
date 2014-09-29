@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: so
+# name: so
+# contributor: David Johnson
+# --
+import System.IO

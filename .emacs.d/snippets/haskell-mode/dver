@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dver
+# key: dver
+# author: dmj
+# --
+import Data.Version as DV

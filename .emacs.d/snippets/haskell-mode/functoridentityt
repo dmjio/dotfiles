@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: functoridentityt
+# name: functoridentityt
+# contributor: David Johnson
+# --
+instance Functor m => Functor (IdentityT m) where
+    fmap f = mapIdentityT (fmap f)

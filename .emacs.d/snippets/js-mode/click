@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: click
+# key: click
+# author: dmjio
+# --
+$("#$1").click(function(){
+    $2
+});

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: orphans
+# key: orphans
+# author: dmj
+# --
+{-# OPTIONS_GHC -fno-warn-orphans #-}

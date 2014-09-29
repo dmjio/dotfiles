@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: First
+# key: First
+# author: dmj
+# --
+newtype First a = First { getFirst :: Maybe a }

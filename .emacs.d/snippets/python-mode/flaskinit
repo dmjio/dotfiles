@@ -1,0 +1,13 @@
+# name: flaskinit
+# key: flaskinit
+# --
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "HTTP/1.0 200 OK\r\nContent-Length: 5\r\n\r\nPong!\r\n"
+
+if __name__ == '__main__':
+    app.run()

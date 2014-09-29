@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: dropWhile
+# key: dropWhile
+# --
+dropWhile :: (a -> Bool) -> [a] -> [a]
+dropWhile _ [] = []
+dropWhile f xs@(x:xs')
+    | f x          = dropWhile f xs'
+    | otherwise    = xs

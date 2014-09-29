@@ -1,0 +1,4 @@
+# key: vp
+# name: vp
+# --
+{-# LANGUAGE ViewPatterns #-}

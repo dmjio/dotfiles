@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: yab
+# key: yab
+# author: dmj
+# --
+import Yesod.Auth.BrowserId (authBrowserId)

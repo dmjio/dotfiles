@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: listt
+# name: listt
+# contributor: David Johnson
+# --
+newtype ListT t m a = ListT { runListT :: m [a] }

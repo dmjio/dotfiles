@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: foldablet
+# name: foldablet
+# contributor: David Johnson
+# --
+instance (Foldable f) => Foldable (${1:Type}T f) where
+    foldMap f ($1T a) = $2
+    

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: iteratee
+# key: iteratee
+# author: dmj
+# --
+consumer :: Iteratee BS.ByteString IO ()
+consumer = do
+    mw <- EB.head
+    case mw of
+        Nothing -> return ()
+        Just w  -> do
+            liftIO . putStr $ "XXX "
+            liftIO . BS.putStrLn . BS.singleton $ w
+            consumer

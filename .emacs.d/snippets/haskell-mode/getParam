@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: getParam
+# name: getParam
+# contributor: David Johnson
+# --
+${1:param} <- getParam "${2:name}"

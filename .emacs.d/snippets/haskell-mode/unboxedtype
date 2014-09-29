@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: unboxedtype
+# key: unboxedtype
+# author: dmj
+# --
+union Arg {
+  struct Val *boxed;     /* most values are boxed */
+  unsigned long unboxed; /* "primitive" values */
+};
+
+typedef struct Val {
+  const struct ValInfo *info;
+  union Arg *args[];  /* args can be boxed or unboxed */
+} Val;
+
+Unboxed types have no constructor and cannot be thunks
+Can fit in a single register or take the place of a Val * arg
+Must extend GCInfo to identify which args are and are not boxed

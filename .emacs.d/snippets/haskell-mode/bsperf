@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: bsperf
+# key: bsperf
+# author: dmj
+# --
+import qualified Data.ByteString.Char8 as B
+import           Data.Maybe
+
+main :: IO ()
+main = try
+
+try :: IO () -- 0.17 seconds
+try = readFile "/usr/share/dict/words" >>= putStrLn . last . lines
+
+bstry :: IO () --0.015 seconds
+bstry = B.readFile "/usr/share/dict/words" >>= B.putStrLn . last . B.lines

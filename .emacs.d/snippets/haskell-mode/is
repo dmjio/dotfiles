@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: is
+# key: is
+# author: dmjio
+# --
+import Snap

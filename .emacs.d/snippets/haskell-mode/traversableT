@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: traversablet
+# name: traversablet
+# contributor: David Johnson
+# --
+instance (Traversable f) => Traversable (${1:Type}T f) where
+    traverse f ($1T a) = $2

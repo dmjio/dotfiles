@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tqs
+# key: tqs
+# author: dmj
+# --
+import Test.QuickSpec

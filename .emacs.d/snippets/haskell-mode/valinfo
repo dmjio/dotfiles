@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: valinfo
+# key: valinfo
+# author: dmj
+# --
+typedef struct Val {
+  const struct ValInfo *info;
+  struct Val *args[];
+} Val;
+
+struct ValInfo {
+  struct GCInfo gcInfo;  /* for garbage collector */
+  enum { THUNK, CONSTRNO, FUNC, IND } tag;
+  union {
+    Exception *(*thunk) (Val *closure);
+    unsigned int constrno;
+    Val *(*func) (const Val *closure, const Val *arg);
+  };
+};
+
+gcInfo says how many Val *s are in args and where they are
+
+tag == CONSTRNO means constrno valid, used as on last slide
+
+tag == IND means args[0] is an indirect forwarding pointer to another
+
+Val and union is unused; useful if size of args grows

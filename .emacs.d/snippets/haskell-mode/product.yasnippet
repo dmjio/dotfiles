@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: product
+# key: product
+# --
+product :: Num a => [a] -> a
+product (xs) = go 1 xs where
+    go acc [] = acc
+    go acc (x:xs) = go (acc * x) xs

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: monoidtuple
+# name: monoidtuple
+# contributor: David Johnson
+# --
+instance Monoid ((,) a) where
+	mempty = (,)
+	a `mappend` b = (a,b)

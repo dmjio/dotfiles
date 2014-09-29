@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gzip
+# key: gzip
+# author: dmj
+# --
+import           Codec.Compression.GZip

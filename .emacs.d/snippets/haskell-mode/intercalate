@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: intercalate
+# key: intercalate
+# author: dmj
+# --
+intercalate :: [a] -> [[a]] -> [a]
+intercalate xs xss = concat (intersperse xs xss)

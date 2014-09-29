@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: cycle
+# key: cycle
+# --
+cycle :: [a] -> [a]
+cycle [] = error "Cycling on an empty list"
+cycle xs = xs' where xs' = xs ++ xs'

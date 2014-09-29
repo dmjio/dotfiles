@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: nestSnaplet
+# name: nestSnaplet
+# contributor: David Johnson
+# --
+${1:var} <- nestSnaplet "${2:name}" ${3:instance} $ $3Init "${4:location}"

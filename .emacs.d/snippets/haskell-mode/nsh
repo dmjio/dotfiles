@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: nsh
+# name: nsh
+# contributor: David Johnson
+# --
+${1:name} <- nestSnaplet "heist" heist $ heistInit "templates"

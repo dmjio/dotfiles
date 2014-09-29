@@ -1,0 +1,4 @@
+# key: cmmonadio
+# name: cmmonadio
+# --
+import Control.Monad.IO.Class (liftIO)

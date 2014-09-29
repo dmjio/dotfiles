@@ -1,0 +1,43 @@
+# key: lazyio
+# name: lazyio
+# --
+{-# LANGUAGE OverloadedStrings   #-}
+{-# LANGUAGE ScopedTypeVariables #-}
+
+import           Control.Concurrent (threadDelay)
+import           Control.Monad
+import           System.IO
+
+delay :: Int -> IO ()
+delay = let secs = (*1000000) in threadDelay . secs
+
+main :: IO ()
+main = do
+  putStrLn "Closing the file handle prematurely, big no no"
+  delay 2
+  replicateM_ 100 wrong
+  putStrLn "As you can see nothing got printed"
+  delay 2
+  putStrLn "Second no-no don't close the file handle at all!"
+  replicateM_ 1000 stillWrong
+
+--wrong: closes before reads, nothing gets printed
+wrong :: IO ()
+wrong = withFile "cool.txt" ReadMode hGetContents  >>= putStr
+
+--wrong: doesn't close file handle at all!
+stillWrong :: IO ()
+stillWrong = do
+  handle <- openFile "cool.txt" ReadMode
+  str <- fmap head $ hGetContents handle
+  putChar str
+
+--correct: reads the file entirely into ram, prints it, closes it
+right :: IO ()
+right =
+  withFile "cool.txt" ReadMode $ \handle -> do
+          fileData <- fmap head $ hGetContents handle
+          putChar fileData
+
+--better, uses an iteratee to "stream" (read incrementally in steps)
+--data from disk to in chunks

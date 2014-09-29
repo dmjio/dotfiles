@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: rando
+# key: rando
+# --
+main = do
+  gen <- getStdGen
+  let num = randomR (1,1000) gen :: (Int, StdGen)
+  putStrLn $ show $ fst num

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: cmw
+# name: cmw
+# contributor: David Johnson
+# --
+import Control.Monad.Writer

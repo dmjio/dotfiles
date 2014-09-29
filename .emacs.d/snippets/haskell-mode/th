@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: th
+# name: th
+# contributor: David Johnson
+# --
+{-# LANGUAGE TemplateHaskell #-}

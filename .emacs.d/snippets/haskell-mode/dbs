@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: dbs
+# key: dbs
+# author: dmj
+# --
+import qualified Data.ByteString as B
+import Data.ByteString (ByteString)

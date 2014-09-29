@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dd
+# key: dd
+# author: dmj
+# --
+import Data.Data

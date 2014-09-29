@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nemv
+# key: nemv
+# author: dmj
+# --
+newEmptyMVar

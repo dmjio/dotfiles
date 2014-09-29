@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: scanr
+# key: scanr
+# --
+scanr :: (a -> b -> b) -> b -> [a] -> [b]
+scanr _ b []     = [b]
+scanr f x (y:ys) = f y q : qs
+    where qs@(q:_) = scanr f x ys

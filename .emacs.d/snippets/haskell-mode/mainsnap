@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: mainsnap
+# name: mainsnap
+# contributor: David Johnson
+# --
+main = quickHttpServe $ writeText "hello world"

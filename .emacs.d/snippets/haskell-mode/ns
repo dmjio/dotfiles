@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: ns
+# name: ns
+# contributor: David Johnson
+# --
+import Network.Socket

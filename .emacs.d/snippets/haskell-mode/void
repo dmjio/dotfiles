@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: void
+# name: void
+# contributor: David Johnson
+# --
+void :: Functor f => f a -> f ()
+void = fmap (const ())

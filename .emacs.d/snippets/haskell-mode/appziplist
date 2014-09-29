@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: appziplist
+# name: appziplist
+# contributor: David Johnson
+# --
+instance Applicative ZipList where
+    pure x = ZipList (repeat x)
+    ZipList fs <*> ZipList xs = ZipList $ zipWith ($) fs xs

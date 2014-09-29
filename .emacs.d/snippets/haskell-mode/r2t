@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: r2t
+# key: r2t
+# author: dmj
+# --
+{-# LANGUAGE Rank2Types                #-}

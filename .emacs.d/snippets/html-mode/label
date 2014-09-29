@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: label
+# key: label
+# author: dmjio
+# --
+<label class="$1">$2</label>

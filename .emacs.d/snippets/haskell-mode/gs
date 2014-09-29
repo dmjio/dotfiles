@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gs
+# key: gs
+# author: dmjio
+# --
+import GHC.Stats

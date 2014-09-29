@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: fromJust
+# key: fromJust
+# --
+fromJust          :: Maybe a -> a
+fromJust Nothing  = error "Maybe.fromJust: Nothing" -- yuck
+fromJust (Just x) = x

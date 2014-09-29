@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ccg
+# key: ccg
+# author: dmj
+# --
+import Codec.Compression.GZip

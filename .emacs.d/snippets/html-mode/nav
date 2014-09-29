@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nav
+# key: nav
+# author: dmjio
+# --
+<nav>$1</nav>

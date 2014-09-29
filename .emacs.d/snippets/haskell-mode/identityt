@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: identityt
+# name: identityt
+# contributor: David Johnson
+# --
+newtype IdentityT m a = IdentityT { runIdentityT :: m a }

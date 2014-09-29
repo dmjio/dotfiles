@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dtc
+# key: dtc
+# author: dmj
+# --
+import Data.Time.Clock (diffUTCTime, getCurrentTime)

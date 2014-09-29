@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cmc
+# key: cmc
+# author:dmj
+# --
+import  Control.Monad.CatchIO

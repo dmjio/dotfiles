@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: getRandoms
+# key: getRandoms
+# author: dmjio
+# --
+getRandoms :: RandomList :: (Random a, RandomGen b) => b -> [a]
+getRandoms = unfoldr (Just . random)

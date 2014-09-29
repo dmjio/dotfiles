@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: p
+# key: p
+# author: dmjio
+# --
+printf('%1\n');

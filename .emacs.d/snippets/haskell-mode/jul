@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: jul
+# key: jul
+# author: dmj
+# --
+[julius| $1 |]

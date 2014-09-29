@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: &&
+# name: &&
+# contributor: David Johnson
+# --
+(&&)                    :: Bool -> Bool -> Bool
+True  && x              =  x
+False && _              =  False

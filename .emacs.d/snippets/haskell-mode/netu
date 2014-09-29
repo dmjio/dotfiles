@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: netu
+# key: netu
+# author: dmj
+# --
+import           Network.URI

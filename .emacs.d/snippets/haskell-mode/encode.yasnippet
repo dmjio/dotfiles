@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: encode
+# key: encode
+# --
+import           Data.Binary
+
+encodeStuff = do
+  encodeFile "cookie.txt" (4 :: Int)
+
+decodeStuff = do
+  int <- decodeFile "cookie.txt" :: IO Int
+  return int
+
+main = do
+  encodeStuff
+  num <- decodeStuff
+  print num

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: elem
+# key: elem
+# --
+elem :: Eq a => a -> [a] -> Bool
+elem _ [] = False
+elem y xs = any (==y) xs

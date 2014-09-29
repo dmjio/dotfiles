@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: bracketex
+# key: bracketex
+# author: dmjio
+# --
+import           Control.Concurrent
+import           Control.Exception
+import           Control.Monad
+
+secs :: Int -> Int
+secs = (*1000000)
+
+main :: IO ()
+main = bracket start
+               finish
+               middle
+  where start = getLine
+        finish arg = do
+          putStrLn arg
+          putStrLn "done"
+        middle _ = forever $ do
+          threadDelay $ secs 1
+          putStrLn "running"

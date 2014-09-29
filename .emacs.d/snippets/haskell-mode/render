@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: render
+# name: render
+# contributor: David Johnson
+# --
+render "${1:handler}"

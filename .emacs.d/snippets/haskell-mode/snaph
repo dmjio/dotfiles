@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: snaph
+# name: snaph
+# contributor: David Johnson
+# --
+${1:handler} :: Handler ${2:App} $2 ()
+$1 = $3

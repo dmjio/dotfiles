@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: lattice
+# name: lattice
+# contributor: David Johnson
+# --
+class Eq a => Lattice a where
+    bottom, top :: a
+    meet, join :: a -> a -> a
+    lt         :: a -> a -> Bool
+    x `lt` y   = (x `join` y) == y

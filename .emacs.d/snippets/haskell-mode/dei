@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dei
+# key: dei
+# author: dmj
+# --
+import Data.Either

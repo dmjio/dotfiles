@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: appl
+# key: appl
+# author: dmj
+# --
+<apply template="$1"/>

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: kleislicat
+# key: kleislicat
+# author: dmj
+# --
+instance Monad m => Category (Kleisli m) where
+    id = Kleisli return
+    Kleisli g . Kleisli h = Kleisli (h >=> g)

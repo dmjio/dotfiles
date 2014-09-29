@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: monadt
+# name: monadt
+# contributor: David Johnson
+# --
+instance (Monad m) => Monad (${1:Type}T m) where
+    return = $1T $2
+    m >>= k = $1T $ $3
+    fail msg = $1T $ fail msg
+    

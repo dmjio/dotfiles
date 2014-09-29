@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: snapp
+# name: snapp
+# contributor: David Johnson
+# --
+data ${1:App} = $1 {	
+   _heist :: Snaplet (Heist $1)
+}

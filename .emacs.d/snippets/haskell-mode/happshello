@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# key: happshello
+# name: happshello
+# contributor: David Johnson
+# --
+import qualified Data.ByteString.Lazy as BL
+
+{-# LANGUAGE OverloadedStrings #-}
+
+module Main where
+
+import           Happstack.Server
+import           Data.Text (Text)
+
+
+main :: IO ()
+main = simpleHTTP nullConf $ ok ("{\"hello\": \"world\"}" :: Text)

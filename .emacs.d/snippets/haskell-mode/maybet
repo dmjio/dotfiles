@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: maybet
+# name: maybet
+# contributor: David Johnson
+# --
+newtype MaybeT m a = MaybeT { runMaybeT :: m (Maybe a) }

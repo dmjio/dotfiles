@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dav
+# key: dav
+# author: dmj
+# --
+import Data.Array.Vector

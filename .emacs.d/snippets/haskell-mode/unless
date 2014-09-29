@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: replicateM
+# name: replicateM
+# contributor: David Johnson
+# --
+replicateM :: Monad m => Int -> m a -> m [a]
+replicateM num m = sequence $ replicate num m

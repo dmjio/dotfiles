@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: writeJSON
+# key: writeJSON
+# author: dmjio
+# --
+writeJSON :: (MonadSnap m, ToJSON a) => a -> m ()
+writeJSON a = do
+  modifyResponse $ setHeader "Content-Type" "application/json"
+  writeLBS . encode $ a

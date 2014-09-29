@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dse
+# key: dse
+# author: dmj
+# --
+import Data.Serialize

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tsi
+# key: tsi
+# author: dmj
+# --
+{-# LANGUAGE TypeSynonymInstances #-}

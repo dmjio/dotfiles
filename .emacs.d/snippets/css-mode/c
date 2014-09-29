@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: c
+# key: c
+# author: dmj
+# --
+.$1 {
+  $2
+}

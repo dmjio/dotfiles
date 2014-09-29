@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: sr
+# name: sr
+# contributor: David Johnson
+# --
+import System.Random

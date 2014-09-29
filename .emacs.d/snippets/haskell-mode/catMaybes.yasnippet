@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: catMaybes
+# key: catMaybes
+# --
+catMaybes :: [Maybe a] -> [a]
+catMaybes ls = [l | Just l <- ls ]

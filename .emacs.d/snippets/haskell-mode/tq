@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tq
+# key: tq
+# author: dmj
+# --
+import Test.QuickCheck

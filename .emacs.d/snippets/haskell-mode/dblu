@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dblu
+# key: dblu
+# author: dmj
+# --
+import qualified Data.ByteString.Lazy.UTF8 as LU

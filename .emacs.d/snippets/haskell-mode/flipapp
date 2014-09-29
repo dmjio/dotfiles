@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: flipapp
+# name: flipapp
+# contributor: David Johnson
+# --
+(<**>) :: Applicative f => f a -> f (a -> b) -> f b
+(<**>) = liftA2 (flip ($))

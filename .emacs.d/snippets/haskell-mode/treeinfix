@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: treeinfix
+# name: treeinfix
+# contributor: David Johnson
+# --
+data BinTree a = Leaf a | BinTree a :^: BinTree a

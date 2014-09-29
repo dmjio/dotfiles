@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: se
+# name: se
+# contributor: David Johnson
+# --
+import System.Environment

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# key: liftM2
+# name: liftM2
+# contributor: David Johnson
+# --
+liftM2 :: Monad m => (a -> b -> c) -> m a -> m b -> m c
+liftM2 f ma mb = do
+  a <- ma
+  b <- mb
+  return $ f a b
+  

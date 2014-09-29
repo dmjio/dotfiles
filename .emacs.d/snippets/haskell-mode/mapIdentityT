@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: mapIdentityT
+# name: mapIdentityT
+# contributor: David Johnson
+# --
+-- | Lift a unary operation to the new monad.
+mapIdentityT :: (m a -> n b) -> IdentityT m a -> IdentityT n b
+mapIdentityT f = IdentityT . f . runIdentityT

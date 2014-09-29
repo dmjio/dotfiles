@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: edd
+# key: edd
+# author: dmj
+# --
+{-# LANGUAGE EmptyDataDecls            #-}

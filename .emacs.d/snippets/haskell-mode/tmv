@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tmv
+# key: tmv
+# author: dmj
+# --
+takeMVar

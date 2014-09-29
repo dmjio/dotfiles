@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sca
+# key: sca
+# author: dmjio
+# --
+import System.Console.ANSI

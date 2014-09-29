@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: db
+# key: db
+# author: dmj
+# --
+import qualified Data.Binary as B

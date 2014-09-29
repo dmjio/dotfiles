@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: mfixt
+# name: mfixt
+# contributor: David Johnson
+# --
+instance (MonadFix m) => MonadFix (${1:Type}T m) where
+    mfix f = $1T $2
+    

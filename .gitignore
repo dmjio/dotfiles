@@ -2,7 +2,6 @@
 !/*.*
 .Trash
 .bash_history
-.bashrc
 .cabal
 .dropbox
 .emacs.d/auto-save-list
@@ -13,7 +12,6 @@
 .godzilla.txt
 .npm
 .oh-my-zsh
-.ssh
 .vagrant.d
 .zsh-update
 .zsh_history
